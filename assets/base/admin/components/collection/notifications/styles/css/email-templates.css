@@ -1,0 +1,388 @@
+/*******************************
+MIDRUB GLOBAL VARIABLES
+********************************/
+/*******************************
+MIDRUB ELEMENTS STYLES
+********************************/
+a:hover, a:active, a:focus {
+  text-decoration: none; }
+
+/*******************************
+EMAIL TEMPLATES STYLES
+********************************/
+.right-side {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding: 15px 15px 400px; }
+  @media screen and (max-width: 767px) {
+    .right-side {
+      height: auto;
+      display: block;
+      padding: 15px; } }
+  .right-side .checkbox-option-select input[type="checkbox"]:not(:checked),
+  .right-side .checkbox-option-select input[type="checkbox"]:checked {
+    position: absolute;
+    left: -9999px; }
+  .right-side .checkbox-option-select input[type="checkbox"]:not(:checked) + label,
+  .right-side .checkbox-option-select input[type="checkbox"]:checked + label {
+    position: relative;
+    padding-left: 1.95em;
+    cursor: pointer; }
+  .right-side .checkbox-option-select input[type="checkbox"]:not(:checked) + label:before,
+  .right-side .checkbox-option-select input[type="checkbox"]:checked + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 25px;
+    height: 25px;
+    border-radius: 4px; }
+  .right-side .checkbox-option-select input[type="checkbox"]:not(:checked) + label:after,
+  .right-side .checkbox-option-select input[type="checkbox"]:checked + label:after {
+    content: '\2713\0020';
+    position: absolute;
+    top: 0.08em;
+    left: .25em;
+    font-size: 1.3em;
+    line-height: 0.8;
+    color: #000031;
+    transition: all .2s; }
+  .right-side .checkbox-option-select input[type="checkbox"]:not(:checked) + label:after {
+    opacity: 0;
+    transform: scale(0); }
+  .right-side .checkbox-option-select input[type="checkbox"]:checked + label:after {
+    opacity: 1;
+    transform: scale(1); }
+  .right-side .checkbox-option-select input[type="checkbox"]:disabled:not(:checked) + label:before,
+  .right-side .checkbox-option-select input[type="checkbox"]:disabled:checked + label:before {
+    box-shadow: none;
+    border-color: #bbb;
+    background-color: #ddd; }
+  .right-side .checkbox-option-select input[type="checkbox"]:disabled:checked + label:after {
+    color: #999; }
+  .right-side .checkbox-option-select input[type="checkbox"]:disabled + label {
+    color: #aaa; }
+  .right-side .navbar {
+    background-color: #fbfeff;
+    border-radius: 2px;
+    border: 0;
+    padding: 10px 15px 12px;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07); }
+    .right-side .navbar .navbar-header {
+      width: 100%; }
+      @media screen and (max-width: 767px) {
+        .right-side .navbar .navbar-header {
+          margin: 0; } }
+      .right-side .navbar .navbar-header h3 {
+        padding: 0;
+        margin: 0;
+        font-size: 16px;
+        line-height: 38px; }
+        .right-side .navbar .navbar-header h3 .bi {
+          vertical-align: text-top;
+          font-size: 20px; }
+      .right-side .navbar .navbar-header .checkbox-option-select {
+        padding: 0;
+        display: inline-block;
+        margin-right: 15px; }
+        .right-side .navbar .navbar-header .checkbox-option-select label::before {
+          margin-top: -11px;
+          border: 1px solid #cdcde6;
+          background-color: #f5f9fd; }
+        .right-side .navbar .navbar-header .checkbox-option-select label::after {
+          margin-top: -7px; }
+      .right-side .navbar .navbar-header p {
+        margin: 0;
+        line-height: 30px; }
+      .right-side .navbar .navbar-header a.btn-option {
+        display: inline-block;
+        width: auto;
+        background-color: #f5f9fd;
+        color: #6c757d;
+        line-height: 23px;
+        padding: 7px 15px 6px;
+        font-weight: 400;
+        border-radius: .25rem;
+        margin-right: 15px;
+        box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.07);
+        border: 1px solid #cdcde6; }
+        .right-side .navbar .navbar-header a.btn-option:hover, .right-side .navbar .navbar-header a.btn-option:focus {
+          opacity: 0.7;
+          text-decoration: none; }
+        .right-side .navbar .navbar-header a.btn-option i {
+          vertical-align: middle;
+          margin-top: -5px;
+          margin-right: 5px; }
+      .right-side .navbar .navbar-header .input-group {
+        height: 38px;
+        border: 1px solid #cdcde6;
+        border-radius: 3px;
+        width: 50%;
+        float: right; }
+        @media screen and (max-width: 1199px) {
+          .right-side .navbar .navbar-header .input-group {
+            width: 100%; } }
+        .right-side .navbar .navbar-header .input-group .input-group-addon {
+          border: 0;
+          background-color: #f5f9fd; }
+        .right-side .navbar .navbar-header .input-group .form-control {
+          border: 0;
+          height: 36px; }
+          .right-side .navbar .navbar-header .input-group .form-control:focus, .right-side .navbar .navbar-header .input-group .form-control:active {
+            border: 0 !important;
+            box-shadow: none !important; }
+  .right-side .notifications-list-templates {
+    margin: 0;
+    padding: 0; }
+    .right-side .notifications-list-templates li {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      background-color: #fbfeff;
+      border-radius: 2px;
+      border: 0;
+      padding: 15px 15px 18px;
+      -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
+      border-bottom: 1px solid #f5f5f5;
+      font-family: Open Sans,sans-serif;
+      font-weight: 400; }
+      .right-side .notifications-list-templates li:last-child {
+        border-bottom: 0; }
+      .right-side .notifications-list-templates li h5 {
+        color: #777586; }
+        .right-side .notifications-list-templates li h5 a {
+          color: #000031; }
+          .right-side .notifications-list-templates li h5 a:hover {
+            text-decoration: none;
+            border-bottom: 1px solid #000031; }
+  .right-side .pagination-area {
+    margin-top: 20px;
+    background-color: #fbfeff;
+    border-radius: 2px;
+    border: 0;
+    padding: 10px 10px 10px;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
+    display: none; }
+    .right-side .pagination-area .pagination {
+      margin: 5px 5px 0;
+      border: 1px solid #cdcde6;
+      font-family: Open Sans,sans-serif;
+      font-weight: 400; }
+      .right-side .pagination-area .pagination li a,
+      .right-side .pagination-area .pagination li span {
+        line-height: 22px;
+        border: 0;
+        color: #6c757d;
+        background-color: #f5f9fd; }
+        .right-side .pagination-area .pagination li a:hover,
+        .right-side .pagination-area .pagination li span:hover {
+          text-decoration: none;
+          opacity: 0.7; }
+      .right-side .pagination-area .pagination li.pagehide, .right-side .pagination-area .pagination li.active {
+        pointer-events: none; }
+        .right-side .pagination-area .pagination li.pagehide a, .right-side .pagination-area .pagination li.active a {
+          background-color: #FFFFFF !important; }
+    .right-side .pagination-area p {
+      padding: 12px 10px 0; }
+  .right-side .notifications-new-email-template,
+  .right-side .notifications-email-template {
+    padding-top: 15px; }
+    .right-side .notifications-new-email-template > form > .row > .col-lg-3 > div,
+    .right-side .notifications-email-template > form > .row > .col-lg-3 > div {
+      margin: 0; }
+      .right-side .notifications-new-email-template > form > .row > .col-lg-3 > div > div,
+      .right-side .notifications-email-template > form > .row > .col-lg-3 > div > div {
+        margin-bottom: 15px;
+        -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+        background-color: #f5f7f9;
+        background-color: #FFFFFF; }
+        .right-side .notifications-new-email-template > form > .row > .col-lg-3 > div > div select,
+        .right-side .notifications-email-template > form > .row > .col-lg-3 > div > div select {
+          margin: 15px 0;
+          height: 38px;
+          border: 0;
+          -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05); }
+        .right-side .notifications-new-email-template > form > .row > .col-lg-3 > div > div hr,
+        .right-side .notifications-email-template > form > .row > .col-lg-3 > div > div hr {
+          margin: 0;
+          border-top: 1px solid #d8e0e0; }
+        .right-side .notifications-new-email-template > form > .row > .col-lg-3 > div > div .notifications-save-email-template,
+        .right-side .notifications-email-template > form > .row > .col-lg-3 > div > div .notifications-save-email-template {
+          text-align: center;
+          background-color: #0f96e6;
+          color: #FFFFFF;
+          border-color: #0f96e6;
+          width: 100%;
+          text-decoration: none;
+          font-size: 13px;
+          box-shadow: inset 0 32px 0 rgba(0, 0, 0, 0);
+          height: 36px;
+          padding: 0 12px;
+          overflow: hidden;
+          line-height: 36px;
+          border-radius: 4px;
+          margin: 15px 0; }
+          .right-side .notifications-new-email-template > form > .row > .col-lg-3 > div > div .notifications-save-email-template i,
+          .right-side .notifications-email-template > form > .row > .col-lg-3 > div > div .notifications-save-email-template i {
+            float: left;
+            margin-top: 12px; }
+        .right-side .notifications-new-email-template > form > .row > .col-lg-3 > div > div .notifications-email-templates,
+        .right-side .notifications-email-template > form > .row > .col-lg-3 > div > div .notifications-email-templates {
+          border: 0;
+          margin: 0 -15px 0;
+          min-height: 100px;
+          box-shadow: none; }
+          .right-side .notifications-new-email-template > form > .row > .col-lg-3 > div > div .notifications-email-templates > .panel-heading,
+          .right-side .notifications-email-template > form > .row > .col-lg-3 > div > div .notifications-email-templates > .panel-heading {
+            padding-bottom: 0;
+            margin-top: 0px;
+            line-height: 50px;
+            border-bottom: 1px solid #e3eaef;
+            font-family: Open Sans,sans-serif;
+            font-weight: 400;
+            color: #212529;
+            background-color: transparent; }
+          .right-side .notifications-new-email-template > form > .row > .col-lg-3 > div > div .notifications-email-templates > .panel-body .form-group label,
+          .right-side .notifications-email-template > form > .row > .col-lg-3 > div > div .notifications-email-templates > .panel-body .form-group label {
+            font-weight: 400;
+            font-size: 14px;
+            color: #343a40;
+            margin-top: 0; }
+          .right-side .notifications-new-email-template > form > .row > .col-lg-3 > div > div .notifications-email-templates > .panel-body .form-group select,
+          .right-side .notifications-email-template > form > .row > .col-lg-3 > div > div .notifications-email-templates > .panel-body .form-group select {
+            display: block;
+            width: 100%;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #343a40;
+            background-color: #fff;
+            border: 1px solid rgba(0, 0, 0, 0.07);
+            height: 40px;
+            outline: transparent !important;
+            box-shadow: none;
+            border-radius: 0;
+            margin: 0; }
+            .right-side .notifications-new-email-template > form > .row > .col-lg-3 > div > div .notifications-email-templates > .panel-body .form-group select:disabled,
+            .right-side .notifications-email-template > form > .row > .col-lg-3 > div > div .notifications-email-templates > .panel-body .form-group select:disabled {
+              pointer-events: none;
+              background-color: #f5f7fa; }
+    .right-side .notifications-new-email-template > form > .row > .col-lg-7,
+    .right-side .notifications-email-template > form > .row > .col-lg-7 {
+      padding: 0; }
+      @media only screen and (max-width: 1199px) {
+        .right-side .notifications-new-email-template > form > .row > .col-lg-7,
+        .right-side .notifications-email-template > form > .row > .col-lg-7 {
+          padding: 0 15px; } }
+      .right-side .notifications-new-email-template > form > .row > .col-lg-7 .nav-tabs,
+      .right-side .notifications-email-template > form > .row > .col-lg-7 .nav-tabs {
+        margin-bottom: 20px;
+        border-bottom: 1px solid rgba(187, 201, 213, 0.6);
+        height: 40.4px; }
+        .right-side .notifications-new-email-template > form > .row > .col-lg-7 .nav-tabs li,
+        .right-side .notifications-email-template > form > .row > .col-lg-7 .nav-tabs li {
+          display: inline-table; }
+          .right-side .notifications-new-email-template > form > .row > .col-lg-7 .nav-tabs li a,
+          .right-side .notifications-email-template > form > .row > .col-lg-7 .nav-tabs li a {
+            border-radius: 0;
+            padding: 10px 20px;
+            border: 0;
+            color: #343a40;
+            background-color: transparent; }
+          .right-side .notifications-new-email-template > form > .row > .col-lg-7 .nav-tabs li.active a,
+          .right-side .notifications-email-template > form > .row > .col-lg-7 .nav-tabs li.active a {
+            background-color: #FFFFFF; }
+      .right-side .notifications-new-email-template > form > .row > .col-lg-7 .note-editor.note-frame .note-editing-area,
+      .right-side .notifications-email-template > form > .row > .col-lg-7 .note-editor.note-frame .note-editing-area {
+        border-radius: 3px;
+        min-height: 500px;
+        background-color: #fff;
+        overflow: hidden;
+        -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05); }
+      .right-side .notifications-new-email-template > form > .row > .col-lg-7 .panel-heading,
+      .right-side .notifications-email-template > form > .row > .col-lg-7 .panel-heading {
+        padding: 5px 10px 10px;
+        margin: 0;
+        background-color: #ffffff; }
+        .right-side .notifications-new-email-template > form > .row > .col-lg-7 .panel-heading .btn,
+        .right-side .notifications-email-template > form > .row > .col-lg-7 .panel-heading .btn {
+          box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.07);
+          line-height: 21px;
+          border: 0; }
+      .right-side .notifications-new-email-template > form > .row > .col-lg-7 .note-editor.note-frame,
+      .right-side .notifications-email-template > form > .row > .col-lg-7 .note-editor.note-frame {
+        border: 0 !important; }
+        .right-side .notifications-new-email-template > form > .row > .col-lg-7 .note-editor.note-frame .note-toolbar,
+        .right-side .notifications-email-template > form > .row > .col-lg-7 .note-editor.note-frame .note-toolbar {
+          position: initial;
+          z-index: 1; }
+      .right-side .notifications-new-email-template > form > .row > .col-lg-7 .note-statusbar,
+      .right-side .notifications-email-template > form > .row > .col-lg-7 .note-statusbar {
+        display: none; }
+      .right-side .notifications-new-email-template > form > .row > .col-lg-7 .note-editor.note-frame .note-status-output:empty,
+      .right-side .notifications-email-template > form > .row > .col-lg-7 .note-editor.note-frame .note-status-output:empty {
+        display: none; }
+      .right-side .notifications-new-email-template > form > .row > .col-lg-7 .note-statusbar,
+      .right-side .notifications-email-template > form > .row > .col-lg-7 .note-statusbar {
+        display: none; }
+      .right-side .notifications-new-email-template > form > .row > .col-lg-7 input[type="text"],
+      .right-side .notifications-email-template > form > .row > .col-lg-7 input[type="text"] {
+        height: 50px;
+        margin-bottom: 20px;
+        font-size: 15px;
+        -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+        border: 0; }
+        .right-side .notifications-new-email-template > form > .row > .col-lg-7 input[type="text"]:focus, .right-side .notifications-new-email-template > form > .row > .col-lg-7 input[type="text"]:active,
+        .right-side .notifications-email-template > form > .row > .col-lg-7 input[type="text"]:focus,
+        .right-side .notifications-email-template > form > .row > .col-lg-7 input[type="text"]:active {
+          -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+          border: 0 !important; }
+      .right-side .notifications-new-email-template > form > .row > .col-lg-7 .notifications-emails-template-placeholders-area,
+      .right-side .notifications-email-template > form > .row > .col-lg-7 .notifications-emails-template-placeholders-area {
+        border: 0;
+        border-radius: 0;
+        -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+        margin-bottom: 20px;
+        min-height: 100px; }
+        .right-side .notifications-new-email-template > form > .row > .col-lg-7 .notifications-emails-template-placeholders-area > .panel-heading,
+        .right-side .notifications-email-template > form > .row > .col-lg-7 .notifications-emails-template-placeholders-area > .panel-heading {
+          border-bottom: 1px solid #e3eaef;
+          font-family: Open Sans,sans-serif;
+          font-weight: 400;
+          color: #212529;
+          padding-bottom: 0; }
+        .right-side .notifications-new-email-template > form > .row > .col-lg-7 .notifications-emails-template-placeholders-area > .panel-body .notifications-emails-template-placeholders,
+        .right-side .notifications-email-template > form > .row > .col-lg-7 .notifications-emails-template-placeholders-area > .panel-body .notifications-emails-template-placeholders {
+          margin: 5px 0;
+          padding: 0; }
+          .right-side .notifications-new-email-template > form > .row > .col-lg-7 .notifications-emails-template-placeholders-area > .panel-body .notifications-emails-template-placeholders li,
+          .right-side .notifications-email-template > form > .row > .col-lg-7 .notifications-emails-template-placeholders-area > .panel-body .notifications-emails-template-placeholders li {
+            margin-bottom: 20px;
+            list-style: none; }
+            .right-side .notifications-new-email-template > form > .row > .col-lg-7 .notifications-emails-template-placeholders-area > .panel-body .notifications-emails-template-placeholders li .notifications-emails-template-placeholder,
+            .right-side .notifications-email-template > form > .row > .col-lg-7 .notifications-emails-template-placeholders-area > .panel-body .notifications-emails-template-placeholders li .notifications-emails-template-placeholder {
+              margin-right: 15px;
+              padding: 5px;
+              font-size: 12px;
+              color: #000031;
+              background-color: #F8F8FC; }
+
+/*******************************
+MODAL STYLES
+********************************/
+/*******************************
+CSS ANIMATIONS
+********************************/
+
+/*# sourceMappingURL=email-templates.css.map */

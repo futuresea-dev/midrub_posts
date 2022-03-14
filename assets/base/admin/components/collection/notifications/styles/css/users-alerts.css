@@ -1,0 +1,877 @@
+/*******************************
+MIDRUB GLOBAL VARIABLES
+********************************/
+/*******************************
+GENERAL STYLES
+********************************/
+/*******************************
+USERS ALERTS STYLES
+********************************/
+.right-side {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding: 15px 15px 400px; }
+  @media screen and (max-width: 767px) {
+    .right-side {
+      height: auto;
+      display: block;
+      padding: 15px; } }
+  .right-side .checkbox-option-select input[type="checkbox"]:not(:checked),
+  .right-side .checkbox-option-select input[type="checkbox"]:checked {
+    position: absolute;
+    left: -9999px; }
+  .right-side .checkbox-option-select input[type="checkbox"]:not(:checked) + label,
+  .right-side .checkbox-option-select input[type="checkbox"]:checked + label {
+    position: relative;
+    padding-left: 1.95em;
+    cursor: pointer; }
+  .right-side .checkbox-option-select input[type="checkbox"]:not(:checked) + label:before,
+  .right-side .checkbox-option-select input[type="checkbox"]:checked + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 25px;
+    height: 25px;
+    border-radius: 4px; }
+  .right-side .checkbox-option-select input[type="checkbox"]:not(:checked) + label:after,
+  .right-side .checkbox-option-select input[type="checkbox"]:checked + label:after {
+    content: '\2713\0020';
+    position: absolute;
+    top: 0.08em;
+    left: .25em;
+    font-size: 1.3em;
+    line-height: 0.8;
+    color: #000031;
+    transition: all .2s; }
+  .right-side .checkbox-option-select input[type="checkbox"]:not(:checked) + label:after {
+    opacity: 0;
+    transform: scale(0); }
+  .right-side .checkbox-option-select input[type="checkbox"]:checked + label:after {
+    opacity: 1;
+    transform: scale(1); }
+  .right-side .checkbox-option-select input[type="checkbox"]:disabled:not(:checked) + label:before,
+  .right-side .checkbox-option-select input[type="checkbox"]:disabled:checked + label:before {
+    box-shadow: none;
+    border-color: #bbb;
+    background-color: #ddd; }
+  .right-side .checkbox-option-select input[type="checkbox"]:disabled:checked + label:after {
+    color: #999; }
+  .right-side .checkbox-option-select input[type="checkbox"]:disabled + label {
+    color: #aaa; }
+  .right-side .checkbox-option-select {
+    padding: 0;
+    display: inline-block;
+    margin-right: 15px; }
+    .right-side .checkbox-option-select label::before {
+      margin-top: -11px;
+      border: 1px solid #cdcde6;
+      background-color: #f5f9fd; }
+    .right-side .checkbox-option-select label::after {
+      margin-top: -7px; }
+  .right-side .navbar {
+    background-color: #fbfeff;
+    border-radius: 2px;
+    border: 0;
+    padding: 10px 15px 12px;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07); }
+    .right-side .navbar .navbar-header {
+      width: 100%; }
+      @media screen and (max-width: 767px) {
+        .right-side .navbar .navbar-header {
+          margin: 0; } }
+      .right-side .navbar .navbar-header p {
+        margin: 0;
+        line-height: 30px; }
+      .right-side .navbar .navbar-header a.btn-option {
+        display: inline-block;
+        width: auto;
+        background-color: #f5f9fd;
+        color: #6c757d;
+        line-height: 23px;
+        padding: 7px 15px 6px;
+        font-weight: 400;
+        border-radius: .25rem;
+        margin-right: 15px;
+        box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.07);
+        border: 1px solid #cdcde6; }
+        .right-side .navbar .navbar-header a.btn-option:hover, .right-side .navbar .navbar-header a.btn-option:focus {
+          opacity: 0.7;
+          text-decoration: none; }
+        .right-side .navbar .navbar-header a.btn-option i {
+          vertical-align: middle;
+          margin-top: -5px;
+          margin-right: 5px; }
+      .right-side .navbar .navbar-header .input-group {
+        height: 38px;
+        border: 1px solid #cdcde6;
+        border-radius: 3px;
+        width: 50%;
+        float: right; }
+        @media screen and (max-width: 1199px) {
+          .right-side .navbar .navbar-header .input-group {
+            width: 100%; } }
+        .right-side .navbar .navbar-header .input-group .input-group-addon {
+          border: 0;
+          background-color: #f5f9fd; }
+        .right-side .navbar .navbar-header .input-group .form-control {
+          border: 0;
+          height: 36px; }
+          .right-side .navbar .navbar-header .input-group .form-control:focus, .right-side .navbar .navbar-header .input-group .form-control:active {
+            border: 0 !important;
+            box-shadow: none !important; }
+  .right-side .notifications-list-alerts {
+    margin: 0;
+    padding: 0; }
+    .right-side .notifications-list-alerts li {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      background-color: #fbfeff;
+      border-radius: 2px;
+      border: 0;
+      padding: 15px 15px 18px;
+      -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
+      border-bottom: 1px solid #f5f5f5;
+      font-family: Open Sans,sans-serif;
+      font-weight: 400; }
+      .right-side .notifications-list-alerts li:last-child {
+        border-bottom: 0; }
+      .right-side .notifications-list-alerts li a {
+        color: #000031; }
+        .right-side .notifications-list-alerts li a:hover {
+          text-decoration: none;
+          border-bottom: 1px solid #000031; }
+        .right-side .notifications-list-alerts li a:active, .right-side .notifications-list-alerts li a:active {
+          text-decoration: none; }
+      .right-side .notifications-list-alerts li .label-default {
+        color: #1A1A46;
+        background-color: #FBF7FF; }
+      .right-side .notifications-list-alerts li .label-primary {
+        color: #FFFFFF;
+        background-color: #8C84EE; }
+      .right-side .notifications-list-alerts li .label-info {
+        color: #1A1A46;
+        background-color: #FFFADE; }
+      .right-side .notifications-list-alerts li .btn-group .btn-default {
+        padding: 0;
+        border: 0; }
+        .right-side .notifications-list-alerts li .btn-group .btn-default:hover, .right-side .notifications-list-alerts li .btn-group .btn-default:active, .right-side .notifications-list-alerts li .btn-group .btn-default:focus {
+          background-color: transparent !important;
+          box-shadow: none !important;
+          outline: none !important; }
+        .right-side .notifications-list-alerts li .btn-group .btn-default .bi {
+          font-size: 19px;
+          color: #000031; }
+      .right-side .notifications-list-alerts li .btn-group .dropdown-menu {
+        margin-left: -140px;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid rgba(0, 0, 0, 0.15);
+        border-radius: .25rem;
+        padding: 0;
+        box-shadow: none; }
+        .right-side .notifications-list-alerts li .btn-group .dropdown-menu li {
+          padding: 0;
+          box-shadow: none; }
+          .right-side .notifications-list-alerts li .btn-group .dropdown-menu li a {
+            padding: 8px 20px; }
+            .right-side .notifications-list-alerts li .btn-group .dropdown-menu li a i {
+              margin: 0;
+              margin-right: 5px;
+              color: #343a40; }
+            .right-side .notifications-list-alerts li .btn-group .dropdown-menu li a:active, .right-side .notifications-list-alerts li .btn-group .dropdown-menu li a:focus, .right-side .notifications-list-alerts li .btn-group .dropdown-menu li a:hover {
+              background-color: #f7f7f7 !important;
+              color: #343a40;
+              border: 0; }
+  .right-side .pagination-area {
+    margin-top: 20px;
+    background-color: #fbfeff;
+    border-radius: 2px;
+    border: 0;
+    padding: 10px 10px 10px;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
+    display: none; }
+    .right-side .pagination-area .pagination {
+      margin: 5px 5px 0;
+      border: 1px solid #cdcde6;
+      font-family: Open Sans,sans-serif;
+      font-weight: 400; }
+      .right-side .pagination-area .pagination li a,
+      .right-side .pagination-area .pagination li span {
+        line-height: 22px;
+        border: 0;
+        color: #6c757d;
+        background-color: #f5f9fd; }
+        .right-side .pagination-area .pagination li a:hover,
+        .right-side .pagination-area .pagination li span:hover {
+          text-decoration: none;
+          opacity: 0.7; }
+      .right-side .pagination-area .pagination li.pagehide, .right-side .pagination-area .pagination li.active {
+        pointer-events: none; }
+        .right-side .pagination-area .pagination li.pagehide a, .right-side .pagination-area .pagination li.active a {
+          background-color: #FFFFFF !important; }
+    .right-side .pagination-area p {
+      padding: 12px 10px 0; }
+  .right-side .notifications-new-users-alert,
+  .right-side .notifications-users-alert {
+    padding-top: 15px; }
+    .right-side .notifications-new-users-alert > form > .row > .col-lg-3 > div, .right-side .notifications-new-users-alert > .row > .col-lg-3 > div,
+    .right-side .notifications-users-alert > form > .row > .col-lg-3 > div,
+    .right-side .notifications-users-alert > .row > .col-lg-3 > div {
+      margin: 0; }
+      .right-side .notifications-new-users-alert > form > .row > .col-lg-3 > div > div, .right-side .notifications-new-users-alert > .row > .col-lg-3 > div > div,
+      .right-side .notifications-users-alert > form > .row > .col-lg-3 > div > div,
+      .right-side .notifications-users-alert > .row > .col-lg-3 > div > div {
+        margin-bottom: 15px;
+        -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+        background-color: #f5f7f9;
+        background-color: #FFFFFF; }
+        .right-side .notifications-new-users-alert > form > .row > .col-lg-3 > div > div select, .right-side .notifications-new-users-alert > .row > .col-lg-3 > div > div select,
+        .right-side .notifications-users-alert > form > .row > .col-lg-3 > div > div select,
+        .right-side .notifications-users-alert > .row > .col-lg-3 > div > div select {
+          margin: 15px 0;
+          height: 38px;
+          border: 0;
+          -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05); }
+        .right-side .notifications-new-users-alert > form > .row > .col-lg-3 > div > div hr, .right-side .notifications-new-users-alert > .row > .col-lg-3 > div > div hr,
+        .right-side .notifications-users-alert > form > .row > .col-lg-3 > div > div hr,
+        .right-side .notifications-users-alert > .row > .col-lg-3 > div > div hr {
+          margin: 0;
+          border-top: 1px solid #d8e0e0; }
+        .right-side .notifications-new-users-alert > form > .row > .col-lg-3 > div > div .notifications-save-users-alert, .right-side .notifications-new-users-alert > .row > .col-lg-3 > div > div .notifications-save-users-alert,
+        .right-side .notifications-users-alert > form > .row > .col-lg-3 > div > div .notifications-save-users-alert,
+        .right-side .notifications-users-alert > .row > .col-lg-3 > div > div .notifications-save-users-alert {
+          text-align: center;
+          background-color: #0f96e6;
+          color: #FFFFFF;
+          border-color: #0f96e6;
+          width: 100%;
+          text-decoration: none;
+          font-size: 13px;
+          box-shadow: inset 0 32px 0 rgba(0, 0, 0, 0);
+          height: 36px;
+          padding: 0 12px;
+          overflow: hidden;
+          line-height: 36px;
+          border-radius: 4px;
+          margin: 15px 0; }
+          .right-side .notifications-new-users-alert > form > .row > .col-lg-3 > div > div .notifications-save-users-alert i, .right-side .notifications-new-users-alert > .row > .col-lg-3 > div > div .notifications-save-users-alert i,
+          .right-side .notifications-users-alert > form > .row > .col-lg-3 > div > div .notifications-save-users-alert i,
+          .right-side .notifications-users-alert > .row > .col-lg-3 > div > div .notifications-save-users-alert i {
+            float: left;
+            margin-top: 12px; }
+        .right-side .notifications-new-users-alert > form > .row > .col-lg-3 > div > div .notifications-users-alert-filters, .right-side .notifications-new-users-alert > .row > .col-lg-3 > div > div .notifications-users-alert-filters,
+        .right-side .notifications-users-alert > form > .row > .col-lg-3 > div > div .notifications-users-alert-filters,
+        .right-side .notifications-users-alert > .row > .col-lg-3 > div > div .notifications-users-alert-filters {
+          border: 0;
+          margin: 0 -15px 0;
+          min-height: 100px;
+          box-shadow: none; }
+          .right-side .notifications-new-users-alert > form > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-heading, .right-side .notifications-new-users-alert > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-heading,
+          .right-side .notifications-users-alert > form > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-heading,
+          .right-side .notifications-users-alert > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-heading {
+            padding-bottom: 0;
+            margin-top: 0px;
+            line-height: 50px;
+            border-bottom: 1px solid #e3eaef;
+            font-family: Open Sans,sans-serif;
+            font-weight: 400;
+            color: #212529;
+            background-color: transparent; }
+          .right-side .notifications-new-users-alert > form > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group label, .right-side .notifications-new-users-alert > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group label,
+          .right-side .notifications-users-alert > form > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group label,
+          .right-side .notifications-users-alert > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group label {
+            font-weight: 400;
+            font-size: 14px;
+            color: #343a40;
+            margin-top: 0; }
+          .right-side .notifications-new-users-alert > form > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-plans,
+          .right-side .notifications-new-users-alert > form > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-languages, .right-side .notifications-new-users-alert > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-plans,
+          .right-side .notifications-new-users-alert > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-languages,
+          .right-side .notifications-users-alert > form > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-plans,
+          .right-side .notifications-users-alert > form > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-languages,
+          .right-side .notifications-users-alert > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-plans,
+          .right-side .notifications-users-alert > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-languages {
+            border-radius: 3px;
+            box-shadow: 0 5px 2px -5px rgba(0, 0, 0, 0.06);
+            border: solid 1px #eef0ef;
+            background-color: transparent; }
+            .right-side .notifications-new-users-alert > form > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-plans .panel-heading,
+            .right-side .notifications-new-users-alert > form > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-languages .panel-heading, .right-side .notifications-new-users-alert > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-plans .panel-heading,
+            .right-side .notifications-new-users-alert > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-languages .panel-heading,
+            .right-side .notifications-users-alert > form > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-plans .panel-heading,
+            .right-side .notifications-users-alert > form > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-languages .panel-heading,
+            .right-side .notifications-users-alert > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-plans .panel-heading,
+            .right-side .notifications-users-alert > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-languages .panel-heading {
+              margin: 0;
+              line-height: 40px;
+              background-color: transparent;
+              border-bottom: solid 1px #eef0ef; }
+              .right-side .notifications-new-users-alert > form > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-plans .panel-heading .btn,
+              .right-side .notifications-new-users-alert > form > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-languages .panel-heading .btn, .right-side .notifications-new-users-alert > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-plans .panel-heading .btn,
+              .right-side .notifications-new-users-alert > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-languages .panel-heading .btn,
+              .right-side .notifications-users-alert > form > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-plans .panel-heading .btn,
+              .right-side .notifications-users-alert > form > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-languages .panel-heading .btn,
+              .right-side .notifications-users-alert > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-plans .panel-heading .btn,
+              .right-side .notifications-users-alert > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-languages .panel-heading .btn {
+                padding: 0;
+                border: 0;
+                background-color: transparent; }
+                .right-side .notifications-new-users-alert > form > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-plans .panel-heading .btn i,
+                .right-side .notifications-new-users-alert > form > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-languages .panel-heading .btn i, .right-side .notifications-new-users-alert > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-plans .panel-heading .btn i,
+                .right-side .notifications-new-users-alert > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-languages .panel-heading .btn i,
+                .right-side .notifications-users-alert > form > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-plans .panel-heading .btn i,
+                .right-side .notifications-users-alert > form > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-languages .panel-heading .btn i,
+                .right-side .notifications-users-alert > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-plans .panel-heading .btn i,
+                .right-side .notifications-users-alert > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-languages .panel-heading .btn i {
+                  font-size: 19px;
+                  color: #615f5c !important; }
+                .right-side .notifications-new-users-alert > form > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-plans .panel-heading .btn:hover,
+                .right-side .notifications-new-users-alert > form > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-languages .panel-heading .btn:hover, .right-side .notifications-new-users-alert > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-plans .panel-heading .btn:hover,
+                .right-side .notifications-new-users-alert > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-languages .panel-heading .btn:hover,
+                .right-side .notifications-users-alert > form > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-plans .panel-heading .btn:hover,
+                .right-side .notifications-users-alert > form > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-languages .panel-heading .btn:hover,
+                .right-side .notifications-users-alert > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-plans .panel-heading .btn:hover,
+                .right-side .notifications-users-alert > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-languages .panel-heading .btn:hover {
+                  opacity: 0.7; }
+            .right-side .notifications-new-users-alert > form > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-plans .panel-body,
+            .right-side .notifications-new-users-alert > form > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-languages .panel-body, .right-side .notifications-new-users-alert > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-plans .panel-body,
+            .right-side .notifications-new-users-alert > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-languages .panel-body,
+            .right-side .notifications-users-alert > form > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-plans .panel-body,
+            .right-side .notifications-users-alert > form > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-languages .panel-body,
+            .right-side .notifications-users-alert > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-plans .panel-body,
+            .right-side .notifications-users-alert > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-languages .panel-body {
+              min-height: 200px; }
+              .right-side .notifications-new-users-alert > form > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-plans .panel-body ul.notifications-selected-plans-list,
+              .right-side .notifications-new-users-alert > form > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-plans .panel-body ul.notifications-selected-languages-list,
+              .right-side .notifications-new-users-alert > form > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-languages .panel-body ul.notifications-selected-plans-list,
+              .right-side .notifications-new-users-alert > form > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-languages .panel-body ul.notifications-selected-languages-list, .right-side .notifications-new-users-alert > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-plans .panel-body ul.notifications-selected-plans-list,
+              .right-side .notifications-new-users-alert > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-plans .panel-body ul.notifications-selected-languages-list,
+              .right-side .notifications-new-users-alert > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-languages .panel-body ul.notifications-selected-plans-list,
+              .right-side .notifications-new-users-alert > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-languages .panel-body ul.notifications-selected-languages-list,
+              .right-side .notifications-users-alert > form > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-plans .panel-body ul.notifications-selected-plans-list,
+              .right-side .notifications-users-alert > form > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-plans .panel-body ul.notifications-selected-languages-list,
+              .right-side .notifications-users-alert > form > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-languages .panel-body ul.notifications-selected-plans-list,
+              .right-side .notifications-users-alert > form > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-languages .panel-body ul.notifications-selected-languages-list,
+              .right-side .notifications-users-alert > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-plans .panel-body ul.notifications-selected-plans-list,
+              .right-side .notifications-users-alert > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-plans .panel-body ul.notifications-selected-languages-list,
+              .right-side .notifications-users-alert > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-languages .panel-body ul.notifications-selected-plans-list,
+              .right-side .notifications-users-alert > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-languages .panel-body ul.notifications-selected-languages-list {
+                margin: 0;
+                padding: 0; }
+                .right-side .notifications-new-users-alert > form > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-plans .panel-body ul.notifications-selected-plans-list li,
+                .right-side .notifications-new-users-alert > form > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-plans .panel-body ul.notifications-selected-languages-list li,
+                .right-side .notifications-new-users-alert > form > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-languages .panel-body ul.notifications-selected-plans-list li,
+                .right-side .notifications-new-users-alert > form > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-languages .panel-body ul.notifications-selected-languages-list li, .right-side .notifications-new-users-alert > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-plans .panel-body ul.notifications-selected-plans-list li,
+                .right-side .notifications-new-users-alert > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-plans .panel-body ul.notifications-selected-languages-list li,
+                .right-side .notifications-new-users-alert > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-languages .panel-body ul.notifications-selected-plans-list li,
+                .right-side .notifications-new-users-alert > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-languages .panel-body ul.notifications-selected-languages-list li,
+                .right-side .notifications-users-alert > form > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-plans .panel-body ul.notifications-selected-plans-list li,
+                .right-side .notifications-users-alert > form > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-plans .panel-body ul.notifications-selected-languages-list li,
+                .right-side .notifications-users-alert > form > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-languages .panel-body ul.notifications-selected-plans-list li,
+                .right-side .notifications-users-alert > form > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-languages .panel-body ul.notifications-selected-languages-list li,
+                .right-side .notifications-users-alert > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-plans .panel-body ul.notifications-selected-plans-list li,
+                .right-side .notifications-users-alert > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-plans .panel-body ul.notifications-selected-languages-list li,
+                .right-side .notifications-users-alert > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-languages .panel-body ul.notifications-selected-plans-list li,
+                .right-side .notifications-users-alert > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-languages .panel-body ul.notifications-selected-languages-list li {
+                  margin-bottom: 10px;
+                  padding: 5px 15px;
+                  border-radius: 3px;
+                  border: 0;
+                  list-style: none;
+                  line-height: 30px;
+                  font-weight: 400;
+                  font-size: 14px;
+                  background-color: #ffffff;
+                  -webkit-box-shadow: 0 1px 2px 0 #ced9e0;
+                  box-shadow: 0 1px 2px 0 #ced9e0; }
+                  .right-side .notifications-new-users-alert > form > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-plans .panel-body ul.notifications-selected-plans-list li.notifications-no-results-found,
+                  .right-side .notifications-new-users-alert > form > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-plans .panel-body ul.notifications-selected-languages-list li.notifications-no-results-found,
+                  .right-side .notifications-new-users-alert > form > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-languages .panel-body ul.notifications-selected-plans-list li.notifications-no-results-found,
+                  .right-side .notifications-new-users-alert > form > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-languages .panel-body ul.notifications-selected-languages-list li.notifications-no-results-found, .right-side .notifications-new-users-alert > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-plans .panel-body ul.notifications-selected-plans-list li.notifications-no-results-found,
+                  .right-side .notifications-new-users-alert > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-plans .panel-body ul.notifications-selected-languages-list li.notifications-no-results-found,
+                  .right-side .notifications-new-users-alert > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-languages .panel-body ul.notifications-selected-plans-list li.notifications-no-results-found,
+                  .right-side .notifications-new-users-alert > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-languages .panel-body ul.notifications-selected-languages-list li.notifications-no-results-found,
+                  .right-side .notifications-users-alert > form > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-plans .panel-body ul.notifications-selected-plans-list li.notifications-no-results-found,
+                  .right-side .notifications-users-alert > form > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-plans .panel-body ul.notifications-selected-languages-list li.notifications-no-results-found,
+                  .right-side .notifications-users-alert > form > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-languages .panel-body ul.notifications-selected-plans-list li.notifications-no-results-found,
+                  .right-side .notifications-users-alert > form > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-languages .panel-body ul.notifications-selected-languages-list li.notifications-no-results-found,
+                  .right-side .notifications-users-alert > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-plans .panel-body ul.notifications-selected-plans-list li.notifications-no-results-found,
+                  .right-side .notifications-users-alert > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-plans .panel-body ul.notifications-selected-languages-list li.notifications-no-results-found,
+                  .right-side .notifications-users-alert > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-languages .panel-body ul.notifications-selected-plans-list li.notifications-no-results-found,
+                  .right-side .notifications-users-alert > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-languages .panel-body ul.notifications-selected-languages-list li.notifications-no-results-found {
+                    margin: 0; }
+                  .right-side .notifications-new-users-alert > form > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-plans .panel-body ul.notifications-selected-plans-list li > .row,
+                  .right-side .notifications-new-users-alert > form > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-plans .panel-body ul.notifications-selected-languages-list li > .row,
+                  .right-side .notifications-new-users-alert > form > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-languages .panel-body ul.notifications-selected-plans-list li > .row,
+                  .right-side .notifications-new-users-alert > form > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-languages .panel-body ul.notifications-selected-languages-list li > .row, .right-side .notifications-new-users-alert > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-plans .panel-body ul.notifications-selected-plans-list li > .row,
+                  .right-side .notifications-new-users-alert > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-plans .panel-body ul.notifications-selected-languages-list li > .row,
+                  .right-side .notifications-new-users-alert > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-languages .panel-body ul.notifications-selected-plans-list li > .row,
+                  .right-side .notifications-new-users-alert > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-languages .panel-body ul.notifications-selected-languages-list li > .row,
+                  .right-side .notifications-users-alert > form > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-plans .panel-body ul.notifications-selected-plans-list li > .row,
+                  .right-side .notifications-users-alert > form > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-plans .panel-body ul.notifications-selected-languages-list li > .row,
+                  .right-side .notifications-users-alert > form > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-languages .panel-body ul.notifications-selected-plans-list li > .row,
+                  .right-side .notifications-users-alert > form > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-languages .panel-body ul.notifications-selected-languages-list li > .row,
+                  .right-side .notifications-users-alert > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-plans .panel-body ul.notifications-selected-plans-list li > .row,
+                  .right-side .notifications-users-alert > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-plans .panel-body ul.notifications-selected-languages-list li > .row,
+                  .right-side .notifications-users-alert > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-languages .panel-body ul.notifications-selected-plans-list li > .row,
+                  .right-side .notifications-users-alert > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-languages .panel-body ul.notifications-selected-languages-list li > .row {
+                    margin: 0;
+                    border-radius: 3px;
+                    line-height: 30px;
+                    font-weight: 400;
+                    font-size: 14px;
+                    background-color: #ffffff;
+                    box-shadow: 0 1px 2px 0 #ced9e0; }
+                    .right-side .notifications-new-users-alert > form > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-plans .panel-body ul.notifications-selected-plans-list li > .row a,
+                    .right-side .notifications-new-users-alert > form > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-plans .panel-body ul.notifications-selected-languages-list li > .row a,
+                    .right-side .notifications-new-users-alert > form > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-languages .panel-body ul.notifications-selected-plans-list li > .row a,
+                    .right-side .notifications-new-users-alert > form > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-languages .panel-body ul.notifications-selected-languages-list li > .row a, .right-side .notifications-new-users-alert > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-plans .panel-body ul.notifications-selected-plans-list li > .row a,
+                    .right-side .notifications-new-users-alert > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-plans .panel-body ul.notifications-selected-languages-list li > .row a,
+                    .right-side .notifications-new-users-alert > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-languages .panel-body ul.notifications-selected-plans-list li > .row a,
+                    .right-side .notifications-new-users-alert > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-languages .panel-body ul.notifications-selected-languages-list li > .row a,
+                    .right-side .notifications-users-alert > form > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-plans .panel-body ul.notifications-selected-plans-list li > .row a,
+                    .right-side .notifications-users-alert > form > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-plans .panel-body ul.notifications-selected-languages-list li > .row a,
+                    .right-side .notifications-users-alert > form > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-languages .panel-body ul.notifications-selected-plans-list li > .row a,
+                    .right-side .notifications-users-alert > form > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-languages .panel-body ul.notifications-selected-languages-list li > .row a,
+                    .right-side .notifications-users-alert > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-plans .panel-body ul.notifications-selected-plans-list li > .row a,
+                    .right-side .notifications-users-alert > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-plans .panel-body ul.notifications-selected-languages-list li > .row a,
+                    .right-side .notifications-users-alert > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-languages .panel-body ul.notifications-selected-plans-list li > .row a,
+                    .right-side .notifications-users-alert > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-languages .panel-body ul.notifications-selected-languages-list li > .row a {
+                      display: block;
+                      padding: 7px 10px;
+                      color: #4c6071;
+                      pointer-events: none; }
+                    .right-side .notifications-new-users-alert > form > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-plans .panel-body ul.notifications-selected-plans-list li > .row .btn,
+                    .right-side .notifications-new-users-alert > form > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-plans .panel-body ul.notifications-selected-languages-list li > .row .btn,
+                    .right-side .notifications-new-users-alert > form > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-languages .panel-body ul.notifications-selected-plans-list li > .row .btn,
+                    .right-side .notifications-new-users-alert > form > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-languages .panel-body ul.notifications-selected-languages-list li > .row .btn, .right-side .notifications-new-users-alert > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-plans .panel-body ul.notifications-selected-plans-list li > .row .btn,
+                    .right-side .notifications-new-users-alert > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-plans .panel-body ul.notifications-selected-languages-list li > .row .btn,
+                    .right-side .notifications-new-users-alert > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-languages .panel-body ul.notifications-selected-plans-list li > .row .btn,
+                    .right-side .notifications-new-users-alert > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-languages .panel-body ul.notifications-selected-languages-list li > .row .btn,
+                    .right-side .notifications-users-alert > form > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-plans .panel-body ul.notifications-selected-plans-list li > .row .btn,
+                    .right-side .notifications-users-alert > form > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-plans .panel-body ul.notifications-selected-languages-list li > .row .btn,
+                    .right-side .notifications-users-alert > form > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-languages .panel-body ul.notifications-selected-plans-list li > .row .btn,
+                    .right-side .notifications-users-alert > form > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-languages .panel-body ul.notifications-selected-languages-list li > .row .btn,
+                    .right-side .notifications-users-alert > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-plans .panel-body ul.notifications-selected-plans-list li > .row .btn,
+                    .right-side .notifications-users-alert > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-plans .panel-body ul.notifications-selected-languages-list li > .row .btn,
+                    .right-side .notifications-users-alert > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-languages .panel-body ul.notifications-selected-plans-list li > .row .btn,
+                    .right-side .notifications-users-alert > .row > .col-lg-3 > div > div .notifications-users-alert-filters > .panel-body .form-group .notifications-users-alert-selected-languages .panel-body ul.notifications-selected-languages-list li > .row .btn {
+                      margin: 14px 0 0;
+                      padding: 0;
+                      border: 0;
+                      line-height: initial;
+                      font-size: 16px;
+                      color: #333333;
+                      background-color: transparent; }
+    .right-side .notifications-new-users-alert > form > .row > .col-lg-7, .right-side .notifications-new-users-alert > .row > .col-lg-7,
+    .right-side .notifications-users-alert > form > .row > .col-lg-7,
+    .right-side .notifications-users-alert > .row > .col-lg-7 {
+      padding: 0; }
+      @media only screen and (max-width: 1199px) {
+        .right-side .notifications-new-users-alert > form > .row > .col-lg-7, .right-side .notifications-new-users-alert > .row > .col-lg-7,
+        .right-side .notifications-users-alert > form > .row > .col-lg-7,
+        .right-side .notifications-users-alert > .row > .col-lg-7 {
+          padding: 0 15px; } }
+      .right-side .notifications-new-users-alert > form > .row > .col-lg-7 .panel, .right-side .notifications-new-users-alert > .row > .col-lg-7 .panel,
+      .right-side .notifications-users-alert > form > .row > .col-lg-7 .panel,
+      .right-side .notifications-users-alert > .row > .col-lg-7 .panel {
+        margin-bottom: 15px;
+        border-radius: 2px;
+        border: 0;
+        background-color: #ffffff;
+        -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07); }
+        .right-side .notifications-new-users-alert > form > .row > .col-lg-7 .panel .panel-heading, .right-side .notifications-new-users-alert > .row > .col-lg-7 .panel .panel-heading,
+        .right-side .notifications-users-alert > form > .row > .col-lg-7 .panel .panel-heading,
+        .right-side .notifications-users-alert > .row > .col-lg-7 .panel .panel-heading {
+          margin: 0;
+          padding: 0 15px;
+          border-bottom: 1px solid #e3eaef;
+          line-height: 50px;
+          font-family: 'Montserrat', sans-serif;
+          font-size: 14px;
+          font-weight: 500;
+          background-color: transparent; }
+          .right-side .notifications-new-users-alert > form > .row > .col-lg-7 .panel .panel-heading i, .right-side .notifications-new-users-alert > .row > .col-lg-7 .panel .panel-heading i,
+          .right-side .notifications-users-alert > form > .row > .col-lg-7 .panel .panel-heading i,
+          .right-side .notifications-users-alert > .row > .col-lg-7 .panel .panel-heading i {
+            vertical-align: middle;
+            margin-top: -5px;
+            margin-right: 5px; }
+        .right-side .notifications-new-users-alert > form > .row > .col-lg-7 .panel .panel-body, .right-side .notifications-new-users-alert > .row > .col-lg-7 .panel .panel-body,
+        .right-side .notifications-users-alert > form > .row > .col-lg-7 .panel .panel-body,
+        .right-side .notifications-users-alert > .row > .col-lg-7 .panel .panel-body {
+          border: 0;
+          background-color: transparent; }
+          .right-side .notifications-new-users-alert > form > .row > .col-lg-7 .panel .panel-body hr, .right-side .notifications-new-users-alert > .row > .col-lg-7 .panel .panel-body hr,
+          .right-side .notifications-users-alert > form > .row > .col-lg-7 .panel .panel-body hr,
+          .right-side .notifications-users-alert > .row > .col-lg-7 .panel .panel-body hr {
+            margin-left: -15px;
+            width: calc(100% + 30px); }
+          .right-side .notifications-new-users-alert > form > .row > .col-lg-7 .panel .panel-body .notifications-list-users, .right-side .notifications-new-users-alert > .row > .col-lg-7 .panel .panel-body .notifications-list-users,
+          .right-side .notifications-users-alert > form > .row > .col-lg-7 .panel .panel-body .notifications-list-users,
+          .right-side .notifications-users-alert > .row > .col-lg-7 .panel .panel-body .notifications-list-users {
+            margin: 0;
+            padding: 0; }
+            .right-side .notifications-new-users-alert > form > .row > .col-lg-7 .panel .panel-body .notifications-list-users li, .right-side .notifications-new-users-alert > .row > .col-lg-7 .panel .panel-body .notifications-list-users li,
+            .right-side .notifications-users-alert > form > .row > .col-lg-7 .panel .panel-body .notifications-list-users li,
+            .right-side .notifications-users-alert > .row > .col-lg-7 .panel .panel-body .notifications-list-users li {
+              margin: 0;
+              padding: 0;
+              list-style: none;
+              background-color: #FFFFFF;
+              border-radius: 2px;
+              border: 0;
+              padding: 6px 15px;
+              -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
+              box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
+              border-bottom: 1px solid #f5f5f5;
+              font-family: Open Sans,sans-serif;
+              font-weight: 400; }
+              .right-side .notifications-new-users-alert > form > .row > .col-lg-7 .panel .panel-body .notifications-list-users li:last-child, .right-side .notifications-new-users-alert > .row > .col-lg-7 .panel .panel-body .notifications-list-users li:last-child,
+              .right-side .notifications-users-alert > form > .row > .col-lg-7 .panel .panel-body .notifications-list-users li:last-child,
+              .right-side .notifications-users-alert > .row > .col-lg-7 .panel .panel-body .notifications-list-users li:last-child {
+                border-bottom: 0; }
+              .right-side .notifications-new-users-alert > form > .row > .col-lg-7 .panel .panel-body .notifications-list-users li.notifications-no-results-found, .right-side .notifications-new-users-alert > .row > .col-lg-7 .panel .panel-body .notifications-list-users li.notifications-no-results-found,
+              .right-side .notifications-users-alert > form > .row > .col-lg-7 .panel .panel-body .notifications-list-users li.notifications-no-results-found,
+              .right-side .notifications-users-alert > .row > .col-lg-7 .panel .panel-body .notifications-list-users li.notifications-no-results-found {
+                padding: 5px 15px;
+                line-height: 30px; }
+              .right-side .notifications-new-users-alert > form > .row > .col-lg-7 .panel .panel-body .notifications-list-users li .notifications-user-activity, .right-side .notifications-new-users-alert > .row > .col-lg-7 .panel .panel-body .notifications-list-users li .notifications-user-activity,
+              .right-side .notifications-users-alert > form > .row > .col-lg-7 .panel .panel-body .notifications-list-users li .notifications-user-activity,
+              .right-side .notifications-users-alert > .row > .col-lg-7 .panel .panel-body .notifications-list-users li .notifications-user-activity {
+                padding-top: 16px; }
+                .right-side .notifications-new-users-alert > form > .row > .col-lg-7 .panel .panel-body .notifications-list-users li .notifications-user-activity .label, .right-side .notifications-new-users-alert > .row > .col-lg-7 .panel .panel-body .notifications-list-users li .notifications-user-activity .label,
+                .right-side .notifications-users-alert > form > .row > .col-lg-7 .panel .panel-body .notifications-list-users li .notifications-user-activity .label,
+                .right-side .notifications-users-alert > .row > .col-lg-7 .panel .panel-body .notifications-list-users li .notifications-user-activity .label {
+                  letter-spacing: 0.2px;
+                  font-weight: 400; }
+                  .right-side .notifications-new-users-alert > form > .row > .col-lg-7 .panel .panel-body .notifications-list-users li .notifications-user-activity .label.label-light, .right-side .notifications-new-users-alert > .row > .col-lg-7 .panel .panel-body .notifications-list-users li .notifications-user-activity .label.label-light,
+                  .right-side .notifications-users-alert > form > .row > .col-lg-7 .panel .panel-body .notifications-list-users li .notifications-user-activity .label.label-light,
+                  .right-side .notifications-users-alert > .row > .col-lg-7 .panel .panel-body .notifications-list-users li .notifications-user-activity .label.label-light {
+                    color: #343a40;
+                    background-color: #FAF8FF; }
+                  .right-side .notifications-new-users-alert > form > .row > .col-lg-7 .panel .panel-body .notifications-list-users li .notifications-user-activity .label.label-default, .right-side .notifications-new-users-alert > .row > .col-lg-7 .panel .panel-body .notifications-list-users li .notifications-user-activity .label.label-default,
+                  .right-side .notifications-users-alert > form > .row > .col-lg-7 .panel .panel-body .notifications-list-users li .notifications-user-activity .label.label-default,
+                  .right-side .notifications-users-alert > .row > .col-lg-7 .panel .panel-body .notifications-list-users li .notifications-user-activity .label.label-default {
+                    color: #ffffff;
+                    background-color: #7D84FF; }
+                  .right-side .notifications-new-users-alert > form > .row > .col-lg-7 .panel .panel-body .notifications-list-users li .notifications-user-activity .label.label-primary, .right-side .notifications-new-users-alert > .row > .col-lg-7 .panel .panel-body .notifications-list-users li .notifications-user-activity .label.label-primary,
+                  .right-side .notifications-users-alert > form > .row > .col-lg-7 .panel .panel-body .notifications-list-users li .notifications-user-activity .label.label-primary,
+                  .right-side .notifications-users-alert > .row > .col-lg-7 .panel .panel-body .notifications-list-users li .notifications-user-activity .label.label-primary {
+                    color: #ffffff;
+                    background-color: #00E5AF; }
+              .right-side .notifications-new-users-alert > form > .row > .col-lg-7 .panel .panel-body .notifications-list-users li .notifications-user-seen-time, .right-side .notifications-new-users-alert > .row > .col-lg-7 .panel .panel-body .notifications-list-users li .notifications-user-seen-time,
+              .right-side .notifications-users-alert > form > .row > .col-lg-7 .panel .panel-body .notifications-list-users li .notifications-user-seen-time,
+              .right-side .notifications-users-alert > .row > .col-lg-7 .panel .panel-body .notifications-list-users li .notifications-user-seen-time {
+                text-align: right; }
+                .right-side .notifications-new-users-alert > form > .row > .col-lg-7 .panel .panel-body .notifications-list-users li .notifications-user-seen-time span, .right-side .notifications-new-users-alert > .row > .col-lg-7 .panel .panel-body .notifications-list-users li .notifications-user-seen-time span,
+                .right-side .notifications-users-alert > form > .row > .col-lg-7 .panel .panel-body .notifications-list-users li .notifications-user-seen-time span,
+                .right-side .notifications-users-alert > .row > .col-lg-7 .panel .panel-body .notifications-list-users li .notifications-user-seen-time span {
+                  line-height: 52px;
+                  font-size: 75%;
+                  color: #ADA9BB; }
+              .right-side .notifications-new-users-alert > form > .row > .col-lg-7 .panel .panel-body .notifications-list-users li .col-lg-5, .right-side .notifications-new-users-alert > .row > .col-lg-7 .panel .panel-body .notifications-list-users li .col-lg-5,
+              .right-side .notifications-users-alert > form > .row > .col-lg-7 .panel .panel-body .notifications-list-users li .col-lg-5,
+              .right-side .notifications-users-alert > .row > .col-lg-7 .panel .panel-body .notifications-list-users li .col-lg-5 {
+                display: table;
+                height: 50px; }
+                .right-side .notifications-new-users-alert > form > .row > .col-lg-7 .panel .panel-body .notifications-list-users li .col-lg-5 .media, .right-side .notifications-new-users-alert > .row > .col-lg-7 .panel .panel-body .notifications-list-users li .col-lg-5 .media,
+                .right-side .notifications-users-alert > form > .row > .col-lg-7 .panel .panel-body .notifications-list-users li .col-lg-5 .media,
+                .right-side .notifications-users-alert > .row > .col-lg-7 .panel .panel-body .notifications-list-users li .col-lg-5 .media {
+                  display: table-cell;
+                  vertical-align: middle;
+                  width: calc(100% - 50px); }
+                  .right-side .notifications-new-users-alert > form > .row > .col-lg-7 .panel .panel-body .notifications-list-users li .col-lg-5 .media .media-left, .right-side .notifications-new-users-alert > .row > .col-lg-7 .panel .panel-body .notifications-list-users li .col-lg-5 .media .media-left,
+                  .right-side .notifications-users-alert > form > .row > .col-lg-7 .panel .panel-body .notifications-list-users li .col-lg-5 .media .media-left,
+                  .right-side .notifications-users-alert > .row > .col-lg-7 .panel .panel-body .notifications-list-users li .col-lg-5 .media .media-left {
+                    vertical-align: middle; }
+                    .right-side .notifications-new-users-alert > form > .row > .col-lg-7 .panel .panel-body .notifications-list-users li .col-lg-5 .media .media-left img, .right-side .notifications-new-users-alert > .row > .col-lg-7 .panel .panel-body .notifications-list-users li .col-lg-5 .media .media-left img,
+                    .right-side .notifications-users-alert > form > .row > .col-lg-7 .panel .panel-body .notifications-list-users li .col-lg-5 .media .media-left img,
+                    .right-side .notifications-users-alert > .row > .col-lg-7 .panel .panel-body .notifications-list-users li .col-lg-5 .media .media-left img {
+                      width: 43px; }
+                  .right-side .notifications-new-users-alert > form > .row > .col-lg-7 .panel .panel-body .notifications-list-users li .col-lg-5 .media .media-body, .right-side .notifications-new-users-alert > .row > .col-lg-7 .panel .panel-body .notifications-list-users li .col-lg-5 .media .media-body,
+                  .right-side .notifications-users-alert > form > .row > .col-lg-7 .panel .panel-body .notifications-list-users li .col-lg-5 .media .media-body,
+                  .right-side .notifications-users-alert > .row > .col-lg-7 .panel .panel-body .notifications-list-users li .col-lg-5 .media .media-body {
+                    display: table-cell;
+                    vertical-align: middle;
+                    height: 56px; }
+                    .right-side .notifications-new-users-alert > form > .row > .col-lg-7 .panel .panel-body .notifications-list-users li .col-lg-5 .media .media-body h5, .right-side .notifications-new-users-alert > .row > .col-lg-7 .panel .panel-body .notifications-list-users li .col-lg-5 .media .media-body h5,
+                    .right-side .notifications-users-alert > form > .row > .col-lg-7 .panel .panel-body .notifications-list-users li .col-lg-5 .media .media-body h5,
+                    .right-side .notifications-users-alert > .row > .col-lg-7 .panel .panel-body .notifications-list-users li .col-lg-5 .media .media-body h5 {
+                      margin: 0 0 3px; }
+                    .right-side .notifications-new-users-alert > form > .row > .col-lg-7 .panel .panel-body .notifications-list-users li .col-lg-5 .media .media-body span, .right-side .notifications-new-users-alert > .row > .col-lg-7 .panel .panel-body .notifications-list-users li .col-lg-5 .media .media-body span,
+                    .right-side .notifications-users-alert > form > .row > .col-lg-7 .panel .panel-body .notifications-list-users li .col-lg-5 .media .media-body span,
+                    .right-side .notifications-users-alert > .row > .col-lg-7 .panel .panel-body .notifications-list-users li .col-lg-5 .media .media-body span {
+                      font-size: 13px; }
+                      .right-side .notifications-new-users-alert > form > .row > .col-lg-7 .panel .panel-body .notifications-list-users li .col-lg-5 .media .media-body span.notifications-user-status-inactive, .right-side .notifications-new-users-alert > .row > .col-lg-7 .panel .panel-body .notifications-list-users li .col-lg-5 .media .media-body span.notifications-user-status-inactive,
+                      .right-side .notifications-users-alert > form > .row > .col-lg-7 .panel .panel-body .notifications-list-users li .col-lg-5 .media .media-body span.notifications-user-status-inactive,
+                      .right-side .notifications-users-alert > .row > .col-lg-7 .panel .panel-body .notifications-list-users li .col-lg-5 .media .media-body span.notifications-user-status-inactive {
+                        color: #E8D5B5; }
+                      .right-side .notifications-new-users-alert > form > .row > .col-lg-7 .panel .panel-body .notifications-list-users li .col-lg-5 .media .media-body span.notifications-user-status-active, .right-side .notifications-new-users-alert > .row > .col-lg-7 .panel .panel-body .notifications-list-users li .col-lg-5 .media .media-body span.notifications-user-status-active,
+                      .right-side .notifications-users-alert > form > .row > .col-lg-7 .panel .panel-body .notifications-list-users li .col-lg-5 .media .media-body span.notifications-user-status-active,
+                      .right-side .notifications-users-alert > .row > .col-lg-7 .panel .panel-body .notifications-list-users li .col-lg-5 .media .media-body span.notifications-user-status-active {
+                        color: #00B6B8; }
+                      .right-side .notifications-new-users-alert > form > .row > .col-lg-7 .panel .panel-body .notifications-list-users li .col-lg-5 .media .media-body span.notifications-user-status-blocked, .right-side .notifications-new-users-alert > .row > .col-lg-7 .panel .panel-body .notifications-list-users li .col-lg-5 .media .media-body span.notifications-user-status-blocked,
+                      .right-side .notifications-users-alert > form > .row > .col-lg-7 .panel .panel-body .notifications-list-users li .col-lg-5 .media .media-body span.notifications-user-status-blocked,
+                      .right-side .notifications-users-alert > .row > .col-lg-7 .panel .panel-body .notifications-list-users li .col-lg-5 .media .media-body span.notifications-user-status-blocked {
+                        color: #B04866; }
+                .right-side .notifications-new-users-alert > form > .row > .col-lg-7 .panel .panel-body .notifications-list-users li .col-lg-5 a, .right-side .notifications-new-users-alert > .row > .col-lg-7 .panel .panel-body .notifications-list-users li .col-lg-5 a,
+                .right-side .notifications-users-alert > form > .row > .col-lg-7 .panel .panel-body .notifications-list-users li .col-lg-5 a,
+                .right-side .notifications-users-alert > .row > .col-lg-7 .panel .panel-body .notifications-list-users li .col-lg-5 a {
+                  color: #000031; }
+                  .right-side .notifications-new-users-alert > form > .row > .col-lg-7 .panel .panel-body .notifications-list-users li .col-lg-5 a:hover, .right-side .notifications-new-users-alert > .row > .col-lg-7 .panel .panel-body .notifications-list-users li .col-lg-5 a:hover,
+                  .right-side .notifications-users-alert > form > .row > .col-lg-7 .panel .panel-body .notifications-list-users li .col-lg-5 a:hover,
+                  .right-side .notifications-users-alert > .row > .col-lg-7 .panel .panel-body .notifications-list-users li .col-lg-5 a:hover {
+                    text-decoration: none;
+                    border-bottom: 1px solid #000031; }
+        .right-side .notifications-new-users-alert > form > .row > .col-lg-7 .panel .panel-footer, .right-side .notifications-new-users-alert > .row > .col-lg-7 .panel .panel-footer,
+        .right-side .notifications-users-alert > form > .row > .col-lg-7 .panel .panel-footer,
+        .right-side .notifications-users-alert > .row > .col-lg-7 .panel .panel-footer {
+          margin: 0;
+          border: 0;
+          background-color: transparent; }
+          .right-side .notifications-new-users-alert > form > .row > .col-lg-7 .panel .panel-footer .pagination-area, .right-side .notifications-new-users-alert > .row > .col-lg-7 .panel .panel-footer .pagination-area,
+          .right-side .notifications-users-alert > form > .row > .col-lg-7 .panel .panel-footer .pagination-area,
+          .right-side .notifications-users-alert > .row > .col-lg-7 .panel .panel-footer .pagination-area {
+            margin: 0;
+            padding: 0;
+            background-color: transparent;
+            box-shadow: none; }
+
+/*******************************
+MODALS
+********************************/
+#notifications-users-alert-filters-plans-filter .modal-content,
+#notifications-users-alert-filters-languages-filter .modal-content {
+  border-radius: 0; }
+  #notifications-users-alert-filters-plans-filter .modal-content .modal-header,
+  #notifications-users-alert-filters-languages-filter .modal-content .modal-header {
+    padding: 0;
+    border-bottom: 1px solid #e3eaef; }
+    #notifications-users-alert-filters-plans-filter .modal-content .modal-header .close,
+    #notifications-users-alert-filters-languages-filter .modal-content .modal-header .close {
+      margin: 15px;
+      font-size: 30px;
+      padding: 0;
+      min-width: auto; }
+    #notifications-users-alert-filters-plans-filter .modal-content .modal-header input[type="text"],
+    #notifications-users-alert-filters-languages-filter .modal-content .modal-header input[type="text"] {
+      width: 80%;
+      height: 40px;
+      margin: 10px;
+      border: 0;
+      border-radius: 0;
+      font-size: 16px;
+      background-color: #ffffff;
+      -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05); }
+      #notifications-users-alert-filters-plans-filter .modal-content .modal-header input[type="text"]:focus, #notifications-users-alert-filters-plans-filter .modal-content .modal-header input[type="text"]:active,
+      #notifications-users-alert-filters-languages-filter .modal-content .modal-header input[type="text"]:focus,
+      #notifications-users-alert-filters-languages-filter .modal-content .modal-header input[type="text"]:active {
+        border: 0 !important;
+        -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) !important;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) !important; }
+  #notifications-users-alert-filters-plans-filter .modal-content .modal-body,
+  #notifications-users-alert-filters-languages-filter .modal-content .modal-body {
+    height: 500px;
+    overflow-y: scroll;
+    background-color: #f5f7fa; }
+    #notifications-users-alert-filters-plans-filter .modal-content .modal-body .checkbox-option-select input[type="checkbox"]:not(:checked),
+    #notifications-users-alert-filters-plans-filter .modal-content .modal-body .checkbox-option-select input[type="checkbox"]:checked,
+    #notifications-users-alert-filters-languages-filter .modal-content .modal-body .checkbox-option-select input[type="checkbox"]:not(:checked),
+    #notifications-users-alert-filters-languages-filter .modal-content .modal-body .checkbox-option-select input[type="checkbox"]:checked {
+      position: absolute;
+      left: -9999px; }
+    #notifications-users-alert-filters-plans-filter .modal-content .modal-body .checkbox-option-select input[type="checkbox"]:not(:checked) + label,
+    #notifications-users-alert-filters-plans-filter .modal-content .modal-body .checkbox-option-select input[type="checkbox"]:checked + label,
+    #notifications-users-alert-filters-languages-filter .modal-content .modal-body .checkbox-option-select input[type="checkbox"]:not(:checked) + label,
+    #notifications-users-alert-filters-languages-filter .modal-content .modal-body .checkbox-option-select input[type="checkbox"]:checked + label {
+      position: relative;
+      padding-left: 1.95em;
+      cursor: pointer; }
+    #notifications-users-alert-filters-plans-filter .modal-content .modal-body .checkbox-option-select input[type="checkbox"]:not(:checked) + label:before,
+    #notifications-users-alert-filters-plans-filter .modal-content .modal-body .checkbox-option-select input[type="checkbox"]:checked + label:before,
+    #notifications-users-alert-filters-languages-filter .modal-content .modal-body .checkbox-option-select input[type="checkbox"]:not(:checked) + label:before,
+    #notifications-users-alert-filters-languages-filter .modal-content .modal-body .checkbox-option-select input[type="checkbox"]:checked + label:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 25px;
+      height: 25px;
+      border-radius: 4px; }
+    #notifications-users-alert-filters-plans-filter .modal-content .modal-body .checkbox-option-select input[type="checkbox"]:not(:checked) + label:after,
+    #notifications-users-alert-filters-plans-filter .modal-content .modal-body .checkbox-option-select input[type="checkbox"]:checked + label:after,
+    #notifications-users-alert-filters-languages-filter .modal-content .modal-body .checkbox-option-select input[type="checkbox"]:not(:checked) + label:after,
+    #notifications-users-alert-filters-languages-filter .modal-content .modal-body .checkbox-option-select input[type="checkbox"]:checked + label:after {
+      content: '\2713\0020';
+      position: absolute;
+      top: 0.08em;
+      left: .25em;
+      font-size: 1.3em;
+      line-height: 0.8;
+      color: #000031;
+      transition: all .2s; }
+    #notifications-users-alert-filters-plans-filter .modal-content .modal-body .checkbox-option-select input[type="checkbox"]:not(:checked) + label:after,
+    #notifications-users-alert-filters-languages-filter .modal-content .modal-body .checkbox-option-select input[type="checkbox"]:not(:checked) + label:after {
+      opacity: 0;
+      transform: scale(0); }
+    #notifications-users-alert-filters-plans-filter .modal-content .modal-body .checkbox-option-select input[type="checkbox"]:checked + label:after,
+    #notifications-users-alert-filters-languages-filter .modal-content .modal-body .checkbox-option-select input[type="checkbox"]:checked + label:after {
+      opacity: 1;
+      transform: scale(1); }
+    #notifications-users-alert-filters-plans-filter .modal-content .modal-body .checkbox-option-select input[type="checkbox"]:disabled:not(:checked) + label:before,
+    #notifications-users-alert-filters-plans-filter .modal-content .modal-body .checkbox-option-select input[type="checkbox"]:disabled:checked + label:before,
+    #notifications-users-alert-filters-languages-filter .modal-content .modal-body .checkbox-option-select input[type="checkbox"]:disabled:not(:checked) + label:before,
+    #notifications-users-alert-filters-languages-filter .modal-content .modal-body .checkbox-option-select input[type="checkbox"]:disabled:checked + label:before {
+      box-shadow: none;
+      border-color: #bbb;
+      background-color: #ddd; }
+    #notifications-users-alert-filters-plans-filter .modal-content .modal-body .checkbox-option-select input[type="checkbox"]:disabled:checked + label:after,
+    #notifications-users-alert-filters-languages-filter .modal-content .modal-body .checkbox-option-select input[type="checkbox"]:disabled:checked + label:after {
+      color: #999; }
+    #notifications-users-alert-filters-plans-filter .modal-content .modal-body .checkbox-option-select input[type="checkbox"]:disabled + label,
+    #notifications-users-alert-filters-languages-filter .modal-content .modal-body .checkbox-option-select input[type="checkbox"]:disabled + label {
+      color: #aaa; }
+    #notifications-users-alert-filters-plans-filter .modal-content .modal-body .checkbox-option-select,
+    #notifications-users-alert-filters-languages-filter .modal-content .modal-body .checkbox-option-select {
+      display: inline-block;
+      vertical-align: middle;
+      margin-top: -15px;
+      margin-right: 10px; }
+      #notifications-users-alert-filters-plans-filter .modal-content .modal-body .checkbox-option-select label::before,
+      #notifications-users-alert-filters-languages-filter .modal-content .modal-body .checkbox-option-select label::before {
+        margin-top: -6px;
+        border: 1px solid #cdcde6;
+        background-color: #f5f9fd; }
+    #notifications-users-alert-filters-plans-filter .modal-content .modal-body::-webkit-scrollbar-track,
+    #notifications-users-alert-filters-languages-filter .modal-content .modal-body::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 6px #f5f7fa;
+      background-color: #F5F5F5; }
+    #notifications-users-alert-filters-plans-filter .modal-content .modal-body::-webkit-scrollbar,
+    #notifications-users-alert-filters-languages-filter .modal-content .modal-body::-webkit-scrollbar {
+      width: 7px;
+      background-color: #615f5c; }
+    #notifications-users-alert-filters-plans-filter .modal-content .modal-body::-webkit-scrollbar-thumb,
+    #notifications-users-alert-filters-languages-filter .modal-content .modal-body::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      background-color: #1a1a46;
+      border: 1px solid #F5F5F5; }
+    #notifications-users-alert-filters-plans-filter .modal-content .modal-body ul,
+    #notifications-users-alert-filters-languages-filter .modal-content .modal-body ul {
+      margin: 0;
+      padding: 0; }
+      #notifications-users-alert-filters-plans-filter .modal-content .modal-body ul li,
+      #notifications-users-alert-filters-languages-filter .modal-content .modal-body ul li {
+        margin: 0;
+        padding: 7px 15px;
+        border-radius: 3px;
+        list-style: none;
+        line-height: 40px;
+        font-weight: 400;
+        font-size: 14px;
+        background-color: #ffffff;
+        box-shadow: 0 1px 2px 0 #ced9e0; }
+        #notifications-users-alert-filters-plans-filter .modal-content .modal-body ul li.no-results-found,
+        #notifications-users-alert-filters-languages-filter .modal-content .modal-body ul li.no-results-found {
+          margin: 0;
+          border-radius: 3px;
+          border: 0;
+          line-height: 30px;
+          font-weight: 400;
+          font-size: 14px;
+          background-color: #ffffff;
+          box-shadow: 0 1px 2px 0 #ced9e0; }
+        #notifications-users-alert-filters-plans-filter .modal-content .modal-body ul li a,
+        #notifications-users-alert-filters-languages-filter .modal-content .modal-body ul li a {
+          padding: 7px 10px;
+          display: block;
+          color: #4c6071; }
+          #notifications-users-alert-filters-plans-filter .modal-content .modal-body ul li a.delete-classification-single,
+          #notifications-users-alert-filters-languages-filter .modal-content .modal-body ul li a.delete-classification-single {
+            opacity: 0.7; }
+          #notifications-users-alert-filters-plans-filter .modal-content .modal-body ul li a[aria-expanded="true"]:after,
+          #notifications-users-alert-filters-languages-filter .modal-content .modal-body ul li a[aria-expanded="true"]:after {
+            font-family: 'simple-line-icons';
+            content: "\e607";
+            float: right;
+            font-size: 12px; }
+          #notifications-users-alert-filters-plans-filter .modal-content .modal-body ul li a[aria-expanded="true"]:hover,
+          #notifications-users-alert-filters-languages-filter .modal-content .modal-body ul li a[aria-expanded="true"]:hover {
+            text-decoration: none; }
+          #notifications-users-alert-filters-plans-filter .modal-content .modal-body ul li a[aria-expanded="false"]:after,
+          #notifications-users-alert-filters-languages-filter .modal-content .modal-body ul li a[aria-expanded="false"]:after {
+            font-family: 'simple-line-icons';
+            content: "\e604";
+            float: right;
+            font-size: 12px; }
+          #notifications-users-alert-filters-plans-filter .modal-content .modal-body ul li a[aria-expanded="false"]:hover,
+          #notifications-users-alert-filters-languages-filter .modal-content .modal-body ul li a[aria-expanded="false"]:hover {
+            text-decoration: none; }
+  #notifications-users-alert-filters-plans-filter .modal-content .modal-footer .pagination,
+  #notifications-users-alert-filters-languages-filter .modal-content .modal-footer .pagination {
+    margin: 0;
+    border: 1px solid #cdcde6;
+    font-family: Open Sans,sans-serif;
+    font-weight: 400; }
+    #notifications-users-alert-filters-plans-filter .modal-content .modal-footer .pagination li a,
+    #notifications-users-alert-filters-plans-filter .modal-content .modal-footer .pagination li span,
+    #notifications-users-alert-filters-languages-filter .modal-content .modal-footer .pagination li a,
+    #notifications-users-alert-filters-languages-filter .modal-content .modal-footer .pagination li span {
+      border: 0;
+      line-height: 22px;
+      color: #6c757d;
+      background-color: #f5f9fd; }
+      #notifications-users-alert-filters-plans-filter .modal-content .modal-footer .pagination li a:hover,
+      #notifications-users-alert-filters-plans-filter .modal-content .modal-footer .pagination li span:hover,
+      #notifications-users-alert-filters-languages-filter .modal-content .modal-footer .pagination li a:hover,
+      #notifications-users-alert-filters-languages-filter .modal-content .modal-footer .pagination li span:hover {
+        text-decoration: none;
+        opacity: 0.7; }
+    #notifications-users-alert-filters-plans-filter .modal-content .modal-footer .pagination li.pagehide, #notifications-users-alert-filters-plans-filter .modal-content .modal-footer .pagination li.active,
+    #notifications-users-alert-filters-languages-filter .modal-content .modal-footer .pagination li.pagehide,
+    #notifications-users-alert-filters-languages-filter .modal-content .modal-footer .pagination li.active {
+      pointer-events: none; }
+      #notifications-users-alert-filters-plans-filter .modal-content .modal-footer .pagination li.pagehide a, #notifications-users-alert-filters-plans-filter .modal-content .modal-footer .pagination li.active a,
+      #notifications-users-alert-filters-languages-filter .modal-content .modal-footer .pagination li.pagehide a,
+      #notifications-users-alert-filters-languages-filter .modal-content .modal-footer .pagination li.active a {
+        background-color: #FFFFFF !important; }
+    #notifications-users-alert-filters-plans-filter .modal-content .modal-footer .pagination li p,
+    #notifications-users-alert-filters-languages-filter .modal-content .modal-footer .pagination li p {
+      padding: 12px 10px 0; }
+
+#notifications-users-alert-filters-languages-filter .modal-content .modal-header {
+  display: -ms-flexbox !important;
+  display: flex !important;
+  width: 100%;
+  -ms-flex-align: center !important;
+  align-items: center !important;
+  -ms-flex-pack: justify !important;
+  justify-content: space-between !important; }
+  #notifications-users-alert-filters-languages-filter .modal-content .modal-header h3 {
+    margin: 0;
+    padding-left: 15px;
+    width: inherit;
+    font-family: Open Sans,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #212529; }
+  #notifications-users-alert-filters-languages-filter .modal-content .modal-header .close:hover, #notifications-users-alert-filters-languages-filter .modal-content .modal-header .close:focus, #notifications-users-alert-filters-languages-filter .modal-content .modal-header .close:active {
+    box-shadow: none;
+    outline: none; }
+
+/*******************************
+CSS ANIMATIONS
+********************************/
+
+/*# sourceMappingURL=users-alerts.css.map */

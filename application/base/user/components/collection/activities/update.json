@@ -1,0 +1,16 @@
+{
+    "version": "Version 0.4",
+    "changelogs": "Added reset for filters.",
+    "files": [
+        "application\/base\/user\/components\/collection\/activities\/main.php",
+        "application\/base\/user\/components\/collection\/activities\/controllers\/user.php",
+        "application\/base\/user\/components\/collection\/activities\/controllers\/ajax.php",
+        "application\/base\/user\/components\/collection\/activities\/helpers\/team.php",
+        "application\/base\/user\/components\/collection\/activities\/helpers\/types.php",
+        "application\/base\/user\/components\/collection\/activities\/inc\/admin.php",
+        "application\/base\/user\/components\/collection\/activities\/language\/english\/activities_user_lang.php",
+        "application\/base\/user\/components\/collection\/activities\/views\/main.php",
+        "assets\/base\/user\/components\/collection\/activities\/js\/activities.js",
+        "assets\/base\/user\/components\/collection\/activities\/styles\/css\/styles.css"
+    ]
+}

@@ -1,0 +1,267 @@
+/*******************************
+IMPORT FONTS
+********************************/
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600");
+/*******************************
+MIDRUB GLOBAL VARIABLES
+********************************/
+/*******************************
+MIDRUB ELEMENTS STYLES
+********************************/
+i {
+  font-weight: 500;
+  font-size: 120%;
+  font-style: inherit; }
+  i.icon-general:after {
+    content: "\2690"; }
+  i.icon-error:after {
+    content: "\26A0"; }
+  i.icon-offers:after {
+    content: "\2105"; }
+
+/*******************************
+NOTIFICATIONS STYLES
+********************************/
+section {
+  transform: scale(0.5);
+  -webkit-animation: loadingOpacity 0.5s;
+  animation: loadingOpacity 0.5s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards; }
+  section.notifications-page {
+    padding: 30px; }
+    section.notifications-page .tab-pane {
+      padding: 0; }
+    section.notifications-page .notifications-title {
+      font-size: 23px;
+      font-weight: 300;
+      font-family: "Open Sans", sans-serif, Arial, Helvetica;
+      margin-bottom: 40px;
+      margin-left: -15px; }
+    section.notifications-page > .row > .col-xl-2 {
+      display: inline-table;
+      margin-bottom: 20px;
+      padding: 0 15px 0 0;
+      min-height: 100px;
+      background-color: #FFFFFF; }
+      section.notifications-page > .row > .col-xl-2 .notifications-menu-group {
+        margin-bottom: 40px;
+        width: 100%; }
+        section.notifications-page > .row > .col-xl-2 .notifications-menu-group:last-child {
+          margin-bottom: 0; }
+        section.notifications-page > .row > .col-xl-2 .notifications-menu-group .notifications-menu-header {
+          margin-top: 25px;
+          margin-bottom: 20px;
+          font-size: 15px;
+          font-weight: 400; }
+        section.notifications-page > .row > .col-xl-2 .notifications-menu-group .nav {
+          width: 100%;
+          border-bottom: 0; }
+          section.notifications-page > .row > .col-xl-2 .notifications-menu-group .nav li {
+            padding: 0;
+            width: 100%; }
+            section.notifications-page > .row > .col-xl-2 .notifications-menu-group .nav li:first-child .notifications-menu-header {
+              margin-top: 0; }
+            section.notifications-page > .row > .col-xl-2 .notifications-menu-group .nav li a {
+              display: block;
+              padding: 0 15px;
+              border: 0;
+              line-height: 40px;
+              font-family: "Open Sans", sans-serif, Arial, Helvetica;
+              font-size: 13px;
+              color: #4a6177; }
+              section.notifications-page > .row > .col-xl-2 .notifications-menu-group .nav li a:hover, section.notifications-page > .row > .col-xl-2 .notifications-menu-group .nav li a.active {
+                border-bottom: 0;
+                background-color: #f9fafb; }
+    @media only screen and (max-width: 1199px) {
+      section.notifications-page > .row .col-xl-6 {
+        padding: 0; } }
+    section.notifications-page > .row .col-xl-6 .notifications-list {
+      min-height: 500px;
+      border-radius: 4px;
+      background-color: #FFFFFF; }
+      section.notifications-page > .row .col-xl-6 .notifications-list .panel .panel-heading {
+        padding: 15px;
+        font-size: 15px;
+        border-bottom: 1px solid rgba(65, 106, 166, 0.1);
+        font-family: "Open Sans", sans-serif, Arial, Helvetica;
+        color: #010101; }
+        section.notifications-page > .row .col-xl-6 .notifications-list .panel .panel-heading .bi {
+          vertical-align: middle;
+          margin-top: -5px;
+          margin-right: 5px;
+          width: 18px;
+          height: 18px; }
+          section.notifications-page > .row .col-xl-6 .notifications-list .panel .panel-heading .bi.bi-box-seam, section.notifications-page > .row .col-xl-6 .notifications-list .panel .panel-heading .bi.bi-exclamation-circle {
+            margin-top: -2px;
+            width: 18px;
+            height: 18px; }
+          section.notifications-page > .row .col-xl-6 .notifications-list .panel .panel-heading .bi.bi-megaphone {
+            color: #719FE9; }
+          section.notifications-page > .row .col-xl-6 .notifications-list .panel .panel-heading .bi.bi-gift {
+            color: #7D67B9; }
+          section.notifications-page > .row .col-xl-6 .notifications-list .panel .panel-heading .bi.bi-box-seam {
+            color: #D9A21B; }
+          section.notifications-page > .row .col-xl-6 .notifications-list .panel .panel-heading .bi.bi-exclamation-circle {
+            color: #AB4B64; }
+        section.notifications-page > .row .col-xl-6 .notifications-list .panel .panel-heading .next-button,
+        section.notifications-page > .row .col-xl-6 .notifications-list .panel .panel-heading .back-button {
+          outline: none;
+          width: 35px;
+          height: 35px;
+          margin-top: -5px;
+          right: 15px;
+          line-height: 9px;
+          position: absolute;
+          border: 1px solid #e3e8ed;
+          -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+          background: #FFFFFF; }
+          section.notifications-page > .row .col-xl-6 .notifications-list .panel .panel-heading .next-button.btn-disabled, section.notifications-page > .row .col-xl-6 .notifications-list .panel .panel-heading .next-button:hover,
+          section.notifications-page > .row .col-xl-6 .notifications-list .panel .panel-heading .back-button.btn-disabled,
+          section.notifications-page > .row .col-xl-6 .notifications-list .panel .panel-heading .back-button:hover {
+            color: rgba(65, 106, 166, 0.5); }
+          section.notifications-page > .row .col-xl-6 .notifications-list .panel .panel-heading .next-button i,
+          section.notifications-page > .row .col-xl-6 .notifications-list .panel .panel-heading .back-button i {
+            margin: 0;
+            line-height: 25px;
+            font-style: inherit; }
+        section.notifications-page > .row .col-xl-6 .notifications-list .panel .panel-heading .next-button.btn-disabled,
+        section.notifications-page > .row .col-xl-6 .notifications-list .panel .panel-heading .back-button.btn-disabled {
+          pointer-events: none; }
+        section.notifications-page > .row .col-xl-6 .notifications-list .panel .panel-heading .back-button {
+          right: 49px;
+          border-top-left-radius: 4px;
+          border-bottom-left-radius: 4px; }
+          section.notifications-page > .row .col-xl-6 .notifications-list .panel .panel-heading .back-button i.arrow-left:after {
+            content: "\2039";
+            font-weight: 500;
+            font-size: 150%; }
+        section.notifications-page > .row .col-xl-6 .notifications-list .panel .panel-heading .next-button {
+          border-top-right-radius: 4px;
+          border-bottom-right-radius: 4px;
+          margin-left: -1px; }
+          section.notifications-page > .row .col-xl-6 .notifications-list .panel .panel-heading .next-button i.arrow-right:after {
+            content: "\203A";
+            font-weight: 500;
+            font-size: 150%; }
+      section.notifications-page > .row .col-xl-6 .notifications-list .panel .panel-body {
+        min-height: 600px;
+        padding-bottom: 20px; }
+        section.notifications-page > .row .col-xl-6 .notifications-list .panel .panel-body .notifications-list-show {
+          margin: 0;
+          padding: 0; }
+          section.notifications-page > .row .col-xl-6 .notifications-list .panel .panel-body .notifications-list-show li {
+            list-style: none;
+            border-bottom: 1px solid rgba(65, 106, 166, 0.05); }
+            section.notifications-page > .row .col-xl-6 .notifications-list .panel .panel-body .notifications-list-show li:hover {
+              background-color: #fbfbfc; }
+            section.notifications-page > .row .col-xl-6 .notifications-list .panel .panel-body .notifications-list-show li:last-child {
+              border-bottom: 0; }
+            section.notifications-page > .row .col-xl-6 .notifications-list .panel .panel-body .notifications-list-show li.notifications-no-results-found {
+              margin: 15px 0 0;
+              padding: 12px 15px;
+              font-size: 15px;
+              color: #393B3C;
+              background-color: #fafcfd; }
+              section.notifications-page > .row .col-xl-6 .notifications-list .panel .panel-body .notifications-list-show li.notifications-no-results-found:hover {
+                background-color: #fafcfd; }
+            section.notifications-page > .row .col-xl-6 .notifications-list .panel .panel-body .notifications-list-show li a.notifications-show-notification {
+              margin: 0;
+              padding: 15px;
+              display: block;
+              font-size: 14px;
+              color: #827f9b;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              overflow: hidden;
+              font-family: "Open Sans", sans-serif, Arial, Helvetica; }
+              section.notifications-page > .row .col-xl-6 .notifications-list .panel .panel-body .notifications-list-show li a.notifications-show-notification:hover {
+                border-bottom: 0; }
+              section.notifications-page > .row .col-xl-6 .notifications-list .panel .panel-body .notifications-list-show li a.notifications-show-notification .bi {
+                vertical-align: middle;
+                margin-top: -4px;
+                margin-right: 10px;
+                width: 17px;
+                height: 17px; }
+            section.notifications-page > .row .col-xl-6 .notifications-list .panel .panel-body .notifications-list-show li.notifications-unread-notification a.notifications-show-notification {
+              color: #010101; }
+              section.notifications-page > .row .col-xl-6 .notifications-list .panel .panel-body .notifications-list-show li.notifications-unread-notification a.notifications-show-notification .bi {
+                color: #2e5f9b; }
+            section.notifications-page > .row .col-xl-6 .notifications-list .panel .panel-body .notifications-list-show li .btn-group {
+              float: right; }
+              section.notifications-page > .row .col-xl-6 .notifications-list .panel .panel-body .notifications-list-show li .btn-group .btn-default {
+                padding: 15px;
+                border: 0;
+                background-color: transparent; }
+                section.notifications-page > .row .col-xl-6 .notifications-list .panel .panel-body .notifications-list-show li .btn-group .btn-default .bi {
+                  vertical-align: bottom;
+                  width: 18px;
+                  height: 18px; }
+                section.notifications-page > .row .col-xl-6 .notifications-list .panel .panel-body .notifications-list-show li .btn-group .btn-default::after {
+                  display: none; }
+                section.notifications-page > .row .col-xl-6 .notifications-list .panel .panel-body .notifications-list-show li .btn-group .btn-default:hover, section.notifications-page > .row .col-xl-6 .notifications-list .panel .panel-body .notifications-list-show li .btn-group .btn-default:active, section.notifications-page > .row .col-xl-6 .notifications-list .panel .panel-body .notifications-list-show li .btn-group .btn-default:focus {
+                  background-color: transparent !important;
+                  box-shadow: none !important; }
+              section.notifications-page > .row .col-xl-6 .notifications-list .panel .panel-body .notifications-list-show li .btn-group .dropdown-menu {
+                right: 0px;
+                left: auto !important;
+                margin-top: -15px;
+                padding: 0;
+                border: 0;
+                border-radius: 0;
+                font-size: 14px; }
+                section.notifications-page > .row .col-xl-6 .notifications-list .panel .panel-body .notifications-list-show li .btn-group .dropdown-menu a {
+                  display: block;
+                  padding: 7px 10px 6px;
+                  line-height: 23px;
+                  text-align: left;
+                  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+                  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+                  background-color: #FFFFFF;
+                  color: #343a40; }
+                  section.notifications-page > .row .col-xl-6 .notifications-list .panel .panel-body .notifications-list-show li .btn-group .dropdown-menu a:hover {
+                    border: 0;
+                    text-align: none;
+                    background-color: #fbfbfc;
+                    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1) !important;
+                    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1) !important; }
+                  section.notifications-page > .row .col-xl-6 .notifications-list .panel .panel-body .notifications-list-show li .btn-group .dropdown-menu a i {
+                    float: left;
+                    margin-top: 2px; }
+    section.notifications-page > .row .col-xl-6 .notification-single {
+      min-height: 500px;
+      border-radius: 4px;
+      background-color: #FFFFFF; }
+      section.notifications-page > .row .col-xl-6 .notification-single .panel .panel-heading {
+        padding: 15px;
+        border-bottom: 1px solid rgba(65, 106, 166, 0.1);
+        font-family: "Open Sans", sans-serif, "Arimo";
+        font-size: 16px;
+        color: #010101; }
+        section.notifications-page > .row .col-xl-6 .notification-single .panel .panel-heading .bi {
+          vertical-align: middle;
+          margin-top: -5px;
+          margin-right: 5px;
+          width: 18px;
+          height: 18px; }
+          section.notifications-page > .row .col-xl-6 .notification-single .panel .panel-heading .bi.bi-megaphone {
+            color: #719FE9; }
+          section.notifications-page > .row .col-xl-6 .notification-single .panel .panel-heading .bi.bi-gift {
+            color: #7D67B9; }
+          section.notifications-page > .row .col-xl-6 .notification-single .panel .panel-heading .bi.bi-box-seam {
+            color: #D9A21B; }
+          section.notifications-page > .row .col-xl-6 .notification-single .panel .panel-heading .bi.bi-exclamation-circle {
+            color: #AB4B64; }
+      section.notifications-page > .row .col-xl-6 .notification-single .panel .panel-body {
+        padding: 15px 15px 50px;
+        line-height: 27px;
+        letter-spacing: .16px;
+        font-family: "Open Sans", sans-serif, "Arimo";
+        font-size: 14px;
+        color: #637178; }
+        section.notifications-page > .row .col-xl-6 .notification-single .panel .panel-body p {
+          margin-bottom: 20px; }
+
+/*# sourceMappingURL=styles.css.map */

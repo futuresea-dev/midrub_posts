@@ -1,0 +1,11 @@
+{
+    "files": [
+        "\/home\/midrubco\/beta.midrub.com\/application\/base\/user\/components\/collection\/faq\/backup\/application\/base\/user\/components\/collection\/faq\/main.php",
+        "\/home\/midrubco\/beta.midrub.com\/application\/base\/user\/components\/collection\/faq\/backup\/application\/base\/user\/components\/collection\/faq\/controllers\/user.php",
+        "\/home\/midrubco\/beta.midrub.com\/application\/base\/user\/components\/collection\/faq\/backup\/application\/base\/user\/components\/collection\/faq\/helpers\/tickets.php",
+        "\/home\/midrubco\/beta.midrub.com\/application\/base\/user\/components\/collection\/faq\/backup\/application\/base\/user\/components\/collection\/faq\/models\/tickets_model.php",
+        "\/home\/midrubco\/beta.midrub.com\/application\/base\/user\/components\/collection\/faq\/backup\/application\/base\/user\/components\/collection\/faq\/views\/single-ticket.php",
+        "\/home\/midrubco\/beta.midrub.com\/application\/base\/user\/components\/collection\/faq\/backup\/application\/base\/user\/components\/collection\/faq\/views\/single-faq-article.php",
+        "\/home\/midrubco\/beta.midrub.com\/application\/base\/user\/components\/collection\/faq\/backup\/application\/base\/user\/components\/collection\/faq\/inc\/admin.php"
+    ]
+}

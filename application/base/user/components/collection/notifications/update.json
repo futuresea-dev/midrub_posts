@@ -1,0 +1,31 @@
+{
+    "version": "Version 0.5",
+    "changelogs": "Added support for errors popus.",
+    "files": [
+        "application\/base\/user\/components\/collection\/notifications\/main.php",
+        "application\/base\/user\/components\/collection\/notifications\/controllers\/user.php",
+        "application\/base\/user\/components\/collection\/notifications\/controllers\/ajax.php",
+        "application\/base\/user\/components\/collection\/notifications\/inc\/admin.php",
+        "application\/base\/user\/components\/collection\/notifications\/helpers\/alerts.php",
+        "application\/base\/user\/components\/collection\/notifications\/helpers\/errors.php",
+        "application\/base\/user\/components\/collection\/notifications\/helpers\/miscellaneous.php",
+        "application\/base\/user\/components\/collection\/notifications\/helpers\/news.php",
+        "application\/base\/user\/components\/collection\/notifications\/helpers\/offers.php",
+        "application\/base\/user\/components\/collection\/notifications\/language\/english\/notifications_user_lang.php",
+        "application\/base\/user\/components\/collection\/notifications\/models\/notifications_alerts_model.php",
+        "application\/base\/user\/components\/collection\/notifications\/models\/notifications_errors_model.php",
+        "application\/base\/user\/components\/collection\/notifications\/models\/notifications_miscellaneous_model.php",
+        "application\/base\/user\/components\/collection\/notifications\/models\/notifications_news_model.php",
+        "application\/base\/user\/components\/collection\/notifications\/models\/notifications_offers_model.php",
+        "application\/base\/user\/components\/collection\/notifications\/views\/main.php",
+        "application\/base\/user\/components\/collection\/notifications\/views\/menu.php",
+        "application\/base\/user\/components\/collection\/notifications\/views\/notification.php",
+        "assets\/base\/user\/components\/collection\/notifications\/js\/alerts.js",
+        "assets\/base\/user\/components\/collection\/notifications\/js\/errors.js",
+        "assets\/base\/user\/components\/collection\/notifications\/js\/main.js",
+        "assets\/base\/user\/components\/collection\/notifications\/js\/miscellaneous.js",
+        "assets\/base\/user\/components\/collection\/notifications\/js\/offers.js",
+        "assets\/base\/user\/components\/collection\/notifications\/styles\/css\/alerts.css",
+        "assets\/base\/user\/components\/collection\/notifications\/styles\/css\/styles.css"
+    ]
+}

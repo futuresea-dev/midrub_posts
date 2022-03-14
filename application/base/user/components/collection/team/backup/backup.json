@@ -1,0 +1,32 @@
+{
+    "files": [
+        "\/home\/midrubco\/beta.midrub.com\/application\/base\/user\/components\/collection\/team\/backup\/application\/base\/user\/components\/collection\/team\/main.php",
+        "\/home\/midrubco\/beta.midrub.com\/application\/base\/user\/components\/collection\/team\/backup\/application\/base\/user\/components\/collection\/team\/controllers\/user.php",
+        "\/home\/midrubco\/beta.midrub.com\/application\/base\/user\/components\/collection\/team\/backup\/application\/base\/user\/components\/collection\/team\/controllers\/ajax.php",
+        "\/home\/midrubco\/beta.midrub.com\/application\/base\/user\/components\/collection\/team\/backup\/application\/base\/user\/components\/collection\/team\/helpers\/roles.php",
+        "\/home\/midrubco\/beta.midrub.com\/application\/base\/user\/components\/collection\/team\/backup\/application\/base\/user\/components\/collection\/team\/helpers\/team.php",
+        "\/home\/midrubco\/beta.midrub.com\/application\/base\/user\/components\/collection\/team\/backup\/application\/base\/user\/components\/collection\/team\/inc\/admin.php",
+        "\/home\/midrubco\/beta.midrub.com\/application\/base\/user\/components\/collection\/team\/backup\/application\/base\/user\/components\/collection\/team\/inc\/members.php",
+        "\/home\/midrubco\/beta.midrub.com\/application\/base\/user\/components\/collection\/team\/backup\/application\/base\/user\/components\/collection\/team\/language\/english\/team_member_lang.php",
+        "\/home\/midrubco\/beta.midrub.com\/application\/base\/user\/components\/collection\/team\/backup\/application\/base\/user\/components\/collection\/team\/language\/english\/team_user_lang.php",
+        "\/home\/midrubco\/beta.midrub.com\/application\/base\/user\/components\/collection\/team\/backup\/application\/base\/user\/components\/collection\/team\/models\/teams_members.php",
+        "\/home\/midrubco\/beta.midrub.com\/application\/base\/user\/components\/collection\/team\/backup\/application\/base\/user\/components\/collection\/team\/models\/teams_roles.php",
+        "\/home\/midrubco\/beta.midrub.com\/application\/base\/user\/components\/collection\/team\/backup\/application\/base\/user\/components\/collection\/team\/views\/main.php",
+        "\/home\/midrubco\/beta.midrub.com\/application\/base\/user\/components\/collection\/team\/backup\/application\/base\/user\/components\/collection\/team\/views\/menu.php",
+        "\/home\/midrubco\/beta.midrub.com\/application\/base\/user\/components\/collection\/team\/backup\/application\/base\/user\/components\/collection\/team\/views\/templates\/member.php",
+        "\/home\/midrubco\/beta.midrub.com\/application\/base\/user\/components\/collection\/team\/backup\/application\/base\/user\/components\/collection\/team\/views\/templates\/members.php",
+        "\/home\/midrubco\/beta.midrub.com\/application\/base\/user\/components\/collection\/team\/backup\/application\/base\/user\/components\/collection\/team\/views\/templates\/new-member.php",
+        "\/home\/midrubco\/beta.midrub.com\/application\/base\/user\/components\/collection\/team\/backup\/application\/base\/user\/components\/collection\/team\/views\/templates\/new-role.php",
+        "\/home\/midrubco\/beta.midrub.com\/application\/base\/user\/components\/collection\/team\/backup\/application\/base\/user\/components\/collection\/team\/views\/templates\/no-member.php",
+        "\/home\/midrubco\/beta.midrub.com\/application\/base\/user\/components\/collection\/team\/backup\/application\/base\/user\/components\/collection\/team\/views\/templates\/no-role.php",
+        "\/home\/midrubco\/beta.midrub.com\/application\/base\/user\/components\/collection\/team\/backup\/application\/base\/user\/components\/collection\/team\/views\/templates\/role.php",
+        "\/home\/midrubco\/beta.midrub.com\/application\/base\/user\/components\/collection\/team\/backup\/application\/base\/user\/components\/collection\/team\/views\/templates\/roles.php",
+        "\/home\/midrubco\/beta.midrub.com\/application\/base\/user\/components\/collection\/team\/backup\/assets\/base\/user\/components\/collection\/team\/js\/member.js",
+        "\/home\/midrubco\/beta.midrub.com\/application\/base\/user\/components\/collection\/team\/backup\/assets\/base\/user\/components\/collection\/team\/js\/members.js",
+        "\/home\/midrubco\/beta.midrub.com\/application\/base\/user\/components\/collection\/team\/backup\/assets\/base\/user\/components\/collection\/team\/js\/new-member.js",
+        "\/home\/midrubco\/beta.midrub.com\/application\/base\/user\/components\/collection\/team\/backup\/assets\/base\/user\/components\/collection\/team\/js\/new-role.js",
+        "\/home\/midrubco\/beta.midrub.com\/application\/base\/user\/components\/collection\/team\/backup\/assets\/base\/user\/components\/collection\/team\/js\/role.js",
+        "\/home\/midrubco\/beta.midrub.com\/application\/base\/user\/components\/collection\/team\/backup\/assets\/base\/user\/components\/collection\/team\/js\/roles.js",
+        "\/home\/midrubco\/beta.midrub.com\/application\/base\/user\/components\/collection\/team\/backup\/assets\/base\/user\/components\/collection\/team\/styles\/css\/styles.css"
+    ]
+}

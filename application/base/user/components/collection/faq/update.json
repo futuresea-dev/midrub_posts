@@ -1,0 +1,13 @@
+{
+    "version": "Version 0.5",
+    "changelogs": "Fixed a bug when the categories missing for articles.",
+    "files": [
+        "application\/base\/user\/components\/collection\/faq\/main.php",
+        "application\/base\/user\/components\/collection\/faq\/controllers\/user.php",
+        "application\/base\/user\/components\/collection\/faq\/helpers\/tickets.php",
+        "application\/base\/user\/components\/collection\/faq\/models\/tickets_model.php",
+        "application\/base\/user\/components\/collection\/faq\/views\/single-ticket.php",
+        "application\/base\/user\/components\/collection\/faq\/views\/single-faq-article.php",
+        "application\/base\/user\/components\/collection\/faq\/inc\/admin.php"
+    ]
+}

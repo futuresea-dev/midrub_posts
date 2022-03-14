@@ -1,0 +1,29 @@
+{
+    "files": [
+        "\/home\/midrubco\/beta.midrub.com\/application\/base\/user\/components\/collection\/notifications\/backup\/application\/base\/user\/components\/collection\/notifications\/main.php",
+        "\/home\/midrubco\/beta.midrub.com\/application\/base\/user\/components\/collection\/notifications\/backup\/application\/base\/user\/components\/collection\/notifications\/controllers\/user.php",
+        "\/home\/midrubco\/beta.midrub.com\/application\/base\/user\/components\/collection\/notifications\/backup\/application\/base\/user\/components\/collection\/notifications\/controllers\/ajax.php",
+        "\/home\/midrubco\/beta.midrub.com\/application\/base\/user\/components\/collection\/notifications\/backup\/application\/base\/user\/components\/collection\/notifications\/inc\/admin.php",
+        "\/home\/midrubco\/beta.midrub.com\/application\/base\/user\/components\/collection\/notifications\/backup\/application\/base\/user\/components\/collection\/notifications\/helpers\/alerts.php",
+        "\/home\/midrubco\/beta.midrub.com\/application\/base\/user\/components\/collection\/notifications\/backup\/application\/base\/user\/components\/collection\/notifications\/helpers\/errors.php",
+        "\/home\/midrubco\/beta.midrub.com\/application\/base\/user\/components\/collection\/notifications\/backup\/application\/base\/user\/components\/collection\/notifications\/helpers\/miscellaneous.php",
+        "\/home\/midrubco\/beta.midrub.com\/application\/base\/user\/components\/collection\/notifications\/backup\/application\/base\/user\/components\/collection\/notifications\/helpers\/news.php",
+        "\/home\/midrubco\/beta.midrub.com\/application\/base\/user\/components\/collection\/notifications\/backup\/application\/base\/user\/components\/collection\/notifications\/helpers\/offers.php",
+        "\/home\/midrubco\/beta.midrub.com\/application\/base\/user\/components\/collection\/notifications\/backup\/application\/base\/user\/components\/collection\/notifications\/language\/english\/notifications_user_lang.php",
+        "\/home\/midrubco\/beta.midrub.com\/application\/base\/user\/components\/collection\/notifications\/backup\/application\/base\/user\/components\/collection\/notifications\/models\/notifications_alerts_model.php",
+        "\/home\/midrubco\/beta.midrub.com\/application\/base\/user\/components\/collection\/notifications\/backup\/application\/base\/user\/components\/collection\/notifications\/models\/notifications_errors_model.php",
+        "\/home\/midrubco\/beta.midrub.com\/application\/base\/user\/components\/collection\/notifications\/backup\/application\/base\/user\/components\/collection\/notifications\/models\/notifications_miscellaneous_model.php",
+        "\/home\/midrubco\/beta.midrub.com\/application\/base\/user\/components\/collection\/notifications\/backup\/application\/base\/user\/components\/collection\/notifications\/models\/notifications_news_model.php",
+        "\/home\/midrubco\/beta.midrub.com\/application\/base\/user\/components\/collection\/notifications\/backup\/application\/base\/user\/components\/collection\/notifications\/models\/notifications_offers_model.php",
+        "\/home\/midrubco\/beta.midrub.com\/application\/base\/user\/components\/collection\/notifications\/backup\/application\/base\/user\/components\/collection\/notifications\/views\/main.php",
+        "\/home\/midrubco\/beta.midrub.com\/application\/base\/user\/components\/collection\/notifications\/backup\/application\/base\/user\/components\/collection\/notifications\/views\/menu.php",
+        "\/home\/midrubco\/beta.midrub.com\/application\/base\/user\/components\/collection\/notifications\/backup\/application\/base\/user\/components\/collection\/notifications\/views\/notification.php",
+        "\/home\/midrubco\/beta.midrub.com\/application\/base\/user\/components\/collection\/notifications\/backup\/assets\/base\/user\/components\/collection\/notifications\/js\/alerts.js",
+        "\/home\/midrubco\/beta.midrub.com\/application\/base\/user\/components\/collection\/notifications\/backup\/assets\/base\/user\/components\/collection\/notifications\/js\/errors.js",
+        "\/home\/midrubco\/beta.midrub.com\/application\/base\/user\/components\/collection\/notifications\/backup\/assets\/base\/user\/components\/collection\/notifications\/js\/main.js",
+        "\/home\/midrubco\/beta.midrub.com\/application\/base\/user\/components\/collection\/notifications\/backup\/assets\/base\/user\/components\/collection\/notifications\/js\/miscellaneous.js",
+        "\/home\/midrubco\/beta.midrub.com\/application\/base\/user\/components\/collection\/notifications\/backup\/assets\/base\/user\/components\/collection\/notifications\/js\/offers.js",
+        "\/home\/midrubco\/beta.midrub.com\/application\/base\/user\/components\/collection\/notifications\/backup\/assets\/base\/user\/components\/collection\/notifications\/styles\/css\/alerts.css",
+        "\/home\/midrubco\/beta.midrub.com\/application\/base\/user\/components\/collection\/notifications\/backup\/assets\/base\/user\/components\/collection\/notifications\/styles\/css\/styles.css"
+    ]
+}
